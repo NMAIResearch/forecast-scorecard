@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Energy-Demand Forecast Scorecard — interactive</title>
+<style>
+  :root{
+    --navy:#1a365d; --slate:#4a5568; --body:#2d3748; --alt:#f7fafc;
+    --line:#e2e8f0; --good:#276749; --goodbg:#f0fff4; --warn:#975a16; --warnbg:#fffaf0;
+    --bad:#9b2c2c; --badbg:#fff5f5; --accent:#2b6cb0;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;color:var(--body);margin:0;
+    background:#fff;line-height:1.45;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 22px 60px}
+  h1{color:var(--navy);font-size:26px;margin:0 0 4px}
+  .sub{color:var(--slate);font-size:14px;margin:0 0 2px}
+  .stamp{color:var(--slate);font-size:12.5px;margin:6px 0 0}
+  .stamp a{color:var(--accent);text-decoration:none}
+  .stamp a:hover{text-decoration:underline}
+
+  .controls{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;
+    margin:22px 0 8px;padding:16px 18px;background:var(--alt);
+    border:1px solid var(--line);border-radius:8px}
+  .ctl label{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--slate);font-weight:bold;margin-bottom:6px}
+  .ctl.hide{display:none}
+  .seg{display:inline-flex;border:1px solid var(--navy);border-radius:6px;overflow:hidden}
+  .seg button{appearance:none;border:0;background:#fff;color:var(--navy);
+    padding:8px 13px;font-size:13.5px;cursor:pointer;font-family:inherit}
+  .seg button+button{border-left:1px solid var(--navy)}
+  .seg button.on{background:var(--navy);color:#fff;font-weight:bold}
+  .grow{flex:1 1 200px;min-width:180px}
+  .grow input{width:100%;padding:8px 10px;font-size:14px;font-family:inherit;
+    border:1px solid var(--line);border-radius:6px}
+
+  .spotlight{margin:14px 0 6px;padding:12px 16px;border-left:4px solid var(--navy);
+    background:#fbfdff;font-size:14px;color:var(--body)}
+  .spotlight b{color:var(--navy)}
+  .spotlight .tiny{display:block;margin-top:6px;font-size:12.5px;color:var(--slate)}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:14px}
+  thead th{position:sticky;top:0;background:var(--navy);color:#fff;text-align:left;
+    padding:10px 10px;font-size:12.5px;cursor:pointer;user-select:none;white-space:nowrap}
+  thead th.num{text-align:right}
+  thead th .ar{opacity:.5;font-size:10px;margin-left:3px}
+  tbody td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:var(--alt)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  td.ctr{text-align:center}
+  .rank{color:var(--slate);font-variant-numeric:tabular-nums}
+  .fc{font-weight:bold;color:var(--navy)}
+  .val{font-weight:bold;font-variant-numeric:tabular-nums}
+  .unit{color:var(--slate);font-size:11.5px}
+  .rev-up{color:var(--good);font-weight:bold}
+  .rev-down{color:var(--bad);font-weight:bold}
+  .flag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11.5px;font-weight:bold}
+  .flag.open{color:var(--good);background:var(--goodbg)}
+  .flag.secondary{color:var(--warn);background:var(--warnbg)}
+  .flag.opaque{color:var(--bad);background:var(--badbg)}
+  .yes{color:var(--good);font-weight:bold}
+  .no{color:var(--bad);font-weight:bold}
+  .mut{color:#a0aec0}
+
+  .foot{margin-top:30px;font-size:12px;color:var(--slate);border-top:1px solid var(--line);
+    padding-top:16px}
+  .foot p{margin:0 0 8px}
+  .foot b{color:var(--body)}
+  details{margin:10px 0}
+  summary{cursor:pointer;color:var(--accent);font-size:13px}
+  .count{color:var(--slate);font-size:12.5px;margin:10px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The AI Energy-Demand Forecast Scorecard</h1>
+  <p class="sub">How the field forecasts data-centre electricity demand — scored on dispersion, the forecasters' own revisions, and transparency. <em>A scorecard of forecaster behaviour, not a forecast.</em></p>
+  <p class="stamp">Interactive front-end over the frozen v0.2 dataset · data as of 2026-06 · canonical record: <a href="https://doi.org/10.5281/zenodo.20572928" target="_blank" rel="noopener">DOI 10.5281/zenodo.20572928</a> · N. Milton, ORCID 0009-0003-4213-7769 · CC BY 4.0</p>
+
+  <div class="controls">
+    <div class="ctl">
+      <label>View</label>
+      <div class="seg" id="view">
+        <button data-v="forecasts" class="on">Forecasts</button>
+        <button data-v="tiers">Transparency funnel</button>
+      </div>
+    </div>
+    <div class="ctl" id="ctl-scope">
+      <label>Scope</label>
+      <div class="seg" id="scope">
+        <button data-v="all" class="on">All</button>
+        <button data-v="Global">Global</button>
+        <button data-v="US">US</button>
+      </div>
+    </div>
+    <div class="ctl" id="ctl-unit">
+      <label>Unit</label>
+      <div class="seg" id="unit">
+        <button data-v="all" class="on">All</button>
+        <button data-v="TWh">TWh</button>
+        <button data-v="GW">GW</button>
+        <button data-v="pct_vs_2023">%</button>
+      </div>
+    </div>
+    <div class="ctl grow">
+      <label>Filter</label>
+      <input id="q" type="search" placeholder="forecaster…" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="spotlight" id="spot"></div>
+
+  <table id="tbl">
+    <thead><tr id="head"></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="count" id="count"></p>
+
+  <div class="foot">
+    <p><b>Forecasts view.</b> The forecasts are deliberately left in their published units, scopes and horizons. <b>Dispersion</b> ("they can't all be right", measured) is computed <em>only within a comparable slice</em> — same scope, metric, unit and horizon. Narrow Scope + Unit to compare like with like; leave them on "All" and the banner reports how many <em>incompatible formats</em> the field is using, which is itself a finding (heterogeneity).</p>
+    <p><b>Transparency funnel.</b> Three nested tiers computed from the table: <b>verified</b> (the figure can be confirmed against any credible source) ⊃ <b>confirmable at the primary source</b> (the author published it themselves) ⊃ <b>reproducible</b> (the model can be rebuilt from public method + data). The gap between verified and reproducible is the headline: most figures can be quoted, few can be rebuilt.</p>
+    <p><b>Revisions</b> shows where a forecaster changed its own number; all logged revisions point up. A third revision (EPRI) is documented in its native unit — % of US electricity, 4.6–9.1% (2024) to 9–17% (2026 ed.), roughly doubled — but not encoded numerically here because this row's TWh is itself derived from that %.</p>
+    <details>
+      <summary>Guardrails — read before citing</summary>
+      <p style="margin-top:10px">This scores how the field forecasts; it is <b>not</b> a forecast and takes no view on which number is right. "Opaque" means the model is proprietary / not reproducible, <em>not</em> that the figure is wrong — several opaque figures are confirmed at the author's own release. BCG's 1050 TWh is the lone unverified entry (a separate paywalled study, not the in-hand BCG PDF). Units and scopes are not interchangeable: TWh, GW and % are different things, US is not Global, 2030 is not 2035.</p>
+    </details>
+    <p style="margin-top:12px"><b>Disclosure.</b> No third party reviewed, funded, or directed this work. The author holds no position that depends on any of these forecasts being right.</p>
+    <p><b>Reproducibility.</b> This page embeds the frozen <code>forecast_scorecard_data.csv</code> verbatim (regenerated by <code>build.py</code>); the full reproduce script and write-up live in the <a href="https://doi.org/10.5281/zenodo.20572928" target="_blank" rel="noopener">Zenodo record</a>. Edit the CSV, run <code>build.py</code>, the findings move.</p>
+  </div>
+</div>
+
+<script>
+const UNIT = { TWh:"TWh", GW:"GW", pct_vs_2023:"% vs 2023" };
+
+// ---- frozen data: regenerated from CSV by build.py ----
+const CSV = `forecaster,forecast_date,horizon_year,scope,metric,unit,value_low,value_high,revised_value,revised_date,transparency,verified,source,notes
+IEA,2025,2030,Global,demand,TWh,946,946,,,open,yes,IEA Energy&AI annex World Data r24,Base Case (2024=416); IEA OWN 2030 scenarios span 669 Headwinds-1264 Lift-Off; quoted 945 is base-case-only
+Gartner,2025-11,2030,Global,demand,TWh,980,980,,,opaque,yes,Gartner newsroom press release 2025-11-17,CONFIRMED 448 TWh(2025)->980(2030) Global; AI servers 93->432 TWh; transparency=opaque means model proprietary/not reproducible (release is free but unauditable)
+McKinsey,2024,2030,US,demand,TWh,606,606,,,opaque,yes,McKinsey "How data centers...sate AI's hunger for power" (17 Sep 2024) + "AI's power binge" charts (6 Nov 2024),CONFIRMED at McKinsey primary: 147(2023/3.7%)->224(2025/5.2%)->606(2030/11.7%); medium scenario full yr-by-yr; ~23% CAGR; figure PRIMARY but model proprietary/not reproducible
+LBNL,2024,2028,US,demand,TWh,325,580,,,open,yes,LBNL 2024 US Data Center Energy Usage Report (Shehabi et al; eta-publications.lbl.gov),325-580 TWh = 6.7-12% of US elec in 2028 NOT 2030 (common misquote; CSV year corrected 2026-06-06); 2023 actual=176 TWh/4.4%; the US-govt anchor
+EPRI,2024,2030,US,demand,TWh,200,400,,,open,yes,EPRI Powering Intelligence (May 2024; restservice.epri.com),PRIMARY UNIT is % not TWh: scenarios 4.6/5.0/6.8/9.1% of US elec by 2030 (TWh DERIVED/approx); EPRI 2026 ed REVISED UP to 9-17% by 2030 (~+60%) = self-revision datapoint
+BCG,2024,2030,US,demand,TWh,1050,1050,,,opaque,no,via WRI (NOT the in-hand BCG PDF),CHECKED in-folder BCG "Infrastructure Strategy 2026" p20: gives only a GROWTH RATE (compute demand high-teens pct/yr to 2030 vs hist 11-12pct) NOT 1050 TWh; the 1050 is from a SEPARATE paywalled BCG study -> stays opaque/unverified
+GoldmanSachs,2025-02,2030,Global,growth,pct_vs_2023,165,165,220,2026-04,opaque,yes,Goldman Sachs (Feb 2025 "165% by 2030" -> GS SUSTAIN Nov 2025 "175%" -> Apr 2026 "~220%"),CONFIRMED DOUBLE up-revision 165->175->220 pct vs2023 (all primary GS); ~1350 TWh global equiv per secondary; model proprietary
+SP_Global,2025,2030,US,demand,TWh,728,728,,,secondary,yes,S&P Global 451 Research Market Monitor (Sep 2025; spglobal.com news),base 366 TWh(2025)->728(2030) US; HYPERSCALE/LEASED/CRYPTO ONLY (excl enterprise=scope caveat); also 61.8->134.4 GW; "nearly triple" is GW-from-2024 (~2x in TWh) - unit nuance
+BloombergNEF,2025-04,2035,US,capacity,GW,78,78,106,2025-12,secondary,yes,BNEF "AI and the Power Grid" (1 Dec 2025; via Utility Dive/Bloomberg),REVISED UP 78(Apr25)->106(Dec25) GW =+36% in 7mo; 2035 horizon + GW (not TWh); BNEF calls 106 CONSERVATIVE vs GS/BCG/McKinsey; TX 12GW early-stage only 1.8GW location-confirmed (speculative)
+McKinsey,2024,2030,Global,capacity,GW,220,220,,,opaque,yes,McKinsey "Scaling bigger faster cheaper data centers" (Exhibit 2),GLOBAL ~220 GW by 2030 (capacity); SAME forecaster reports US in TWh (606) but GLOBAL in GW = intra-forecaster unit-switch; NOT directly comparable to IEA/Gartner global-TWh (no clean conversion)
+Deloitte,2025,2030,Global,demand,TWh,1065,1065,,,secondary,yes,Deloitte 2025 TMT Predictions,536 TWh(2025/~2pct)->1065(2030/~4pct); scenario range ~1000-1300; built on EIA IEO-2023 base + named sources (validated) = methodology sketched (more transparent than peer consultancies)`;
+
+// ---- minimal CSV parser (handles quoted fields with commas) ----
+function parseCSV(text){
+  const rows=[]; let i=0, field='', row=[], inq=false;
+  while(i<text.length){
+    const c=text[i];
+    if(inq){
+      if(c==='"'){ if(text[i+1]==='"'){field+='"';i++;} else inq=false; }
+      else field+=c;
+    } else {
+      if(c==='"') inq=true;
+      else if(c===','){ row.push(field); field=''; }
+      else if(c==='\n'){ row.push(field); rows.push(row); row=[]; field=''; }
+      else if(c==='\r'){ /* skip */ }
+      else field+=c;
+    }
+    i++;
+  }
+  if(field.length||row.length){ row.push(field); rows.push(row); }
+  return rows;
+}
+function toObjects(text){
+  const raw=parseCSV(text); const head=raw[0];
+  return raw.slice(1).filter(r=>r.length>1).map(r=>{
+    const o={}; head.forEach((h,j)=> o[h]= r[j]===undefined?'':r[j]); return o;
+  });
+}
+function num(s){ const n=Number(s); return (s===''||isNaN(n))? null : n; }
+
+const data = toObjects(CSV).map(o=>{
+  const ver = o.verified.trim().toLowerCase()==='yes';
+  const tp = o.transparency.trim().toLowerCase();
+  return {
+    fc:o.forecaster, fdate:o.forecast_date, horizon:o.horizon_year,
+    scope:o.scope, metric:o.metric, unit:o.unit,
+    lo:num(o.value_low), hi:num(o.value_high),
+    rev:num(o.revised_value), revdate:o.revised_date,
+    tp:tp, verified:ver,
+    confirmable: ver && (tp==='open'||tp==='opaque'),
+    reproducible: tp==='open'
+  };
+});
+
+// ---- state ----
+let view='forecasts', scope='all', unit='all', sortK='scope', sortDir=1, query='';
+
+function arrow(k){ return (sortK===k)?(sortDir<0?'▼':'▲'):'↕'; }
+function fmtVal(d){
+  if(d.lo===null) return '<span class="mut">—</span>';
+  const v = (d.lo===d.hi)? (''+d.lo) : (d.lo+'–'+d.hi);
+  return '<span class="val">'+v+'</span> <span class="unit">'+(UNIT[d.unit]||d.unit)+'</span>';
+}
+function fmtRev(d){
+  if(d.rev===null) return '<span class="mut">—</span>';
+  const base=d.hi, delta=d.rev-base, pct=base? Math.round(delta/base*100):0;
+  const up=delta>=0;
+  return '<span class="'+(up?'rev-up':'rev-down')+'">'+base+' → '+d.rev+' '+(up?'▲':'▼')+' '+(up?'+':'')+pct+'%</span>';
+}
+function flag(tp){ return '<span class="flag '+tp+'">'+tp+'</span>'; }
+function yn(b){ return b? '<span class="yes">✓</span>' : '<span class="no">✗</span>'; }
+
+function filtered(){
+  const q=query.trim().toLowerCase();
+  return data.filter(d=>{
+    if(view==='forecasts'){
+      if(scope!=='all' && d.scope!==scope) return false;
+      if(unit!=='all' && d.unit!==unit) return false;
+    }
+    if(q && !d.fc.toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+// ---- forecasts view ----
+function compareF(a,b){
+  let r=0;
+  if(sortK==='value'){ const av=a.hi, bv=b.hi; if(av===null)return 1; if(bv===null)return -1; r=(av-bv)*sortDir; }
+  else if(sortK==='date') r=(a.fdate||'').localeCompare(b.fdate||'')*sortDir;
+  else if(sortK==='horizon') r=(a.horizon||'').localeCompare(b.horizon||'')*sortDir;
+  else if(sortK==='fc') r=a.fc.localeCompare(b.fc)*sortDir;
+  else if(sortK==='tp') r=a.tp.localeCompare(b.tp)*sortDir;
+  else if(sortK==='verified') r=((a.verified?1:0)-(b.verified?1:0))*sortDir;
+  else r=a.scope.localeCompare(b.scope)*sortDir;            // scope
+  if(r===0){ // tiebreak: bigger headline value first
+    r = ((b.hi||0)-(a.hi||0));
+  }
+  return r;
+}
+function renderForecasts(){
+  document.getElementById('head').innerHTML =
+    '<th data-k="fc">Forecaster <span class="ar">'+arrow('fc')+'</span></th>'+
+    '<th data-k="date">Made <span class="ar">'+arrow('date')+'</span></th>'+
+    '<th data-k="horizon">Horizon <span class="ar">'+arrow('horizon')+'</span></th>'+
+    '<th data-k="scope">Scope <span class="ar">'+arrow('scope')+'</span></th>'+
+    '<th data-k="value" class="num">Forecast <span class="ar">'+arrow('value')+'</span></th>'+
+    '<th data-k="rev">Self-revision</th>'+
+    '<th data-k="tp">Transparency <span class="ar">'+arrow('tp')+'</span></th>'+
+    '<th data-k="verified" class="ctr">Verified <span class="ar">'+arrow('verified')+'</span></th>';
+
+  let list=filtered(); list.sort(compareF);
+  const tb=document.getElementById('rows'); tb.innerHTML='';
+  list.forEach(d=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td><span class="fc">'+d.fc+'</span></td>'+
+      '<td>'+(d.fdate||'')+'</td>'+
+      '<td>'+d.horizon+'</td>'+
+      '<td>'+d.scope+' <span class="unit">'+d.metric+'</span></td>'+
+      '<td class="num">'+fmtVal(d)+'</td>'+
+      '<td>'+fmtRev(d)+'</td>'+
+      '<td>'+flag(d.tp)+'</td>'+
+      '<td class="ctr">'+yn(d.verified)+'</td>';
+    tb.appendChild(tr);
+  });
+  document.getElementById('count').textContent=list.length+' of '+data.length+' forecasts shown';
+
+  // comparability banner
+  const withVal=list.filter(d=>d.lo!==null);
+  const groups={};
+  withVal.forEach(d=>{ const k=d.scope+'|'+d.metric+'|'+d.unit+'|'+d.horizon; (groups[k]=groups[k]||[]).push(d); });
+  const keys=Object.keys(groups);
+  const comparable=keys.filter(k=>groups[k].length>=2).sort((a,b)=>groups[b].length-groups[a].length);
+  function disp(k){
+    const g=groups[k], lo=Math.min(...g.map(d=>d.lo)), hi=Math.max(...g.map(d=>d.hi));
+    const p=k.split('|');
+    return {g:g, lo:lo, hi:hi, ratio:(lo?hi/lo:0), sc:p[0], me:p[1], un:p[2], yr:p[3]};
+  }
+  let msg;
+  if(keys.length<=1){
+    if(comparable.length===1){ const x=disp(comparable[0]);
+      msg='<b>Comparable slice.</b> '+x.g.length+' forecasts on the same '+x.sc+' '+x.me+' ('+(UNIT[x.un]||x.un)+
+          ') @ '+x.yr+' basis span <b>'+x.lo+'–'+x.hi+'</b> = <b>'+x.ratio.toFixed(1)+'× spread</b>. They cannot all be right.';
+    } else if(keys.length===1){
+      msg='<b>Only one forecast on this basis</b> — nothing to compare here. Widen Scope or Unit.';
+    } else {
+      msg='No numeric forecasts in the current view.';
+    }
+  } else {
+    msg='<b>Not directly comparable.</b> These '+withVal.length+' forecasts are in <b>'+keys.length+
+        ' incompatible formats</b> (scope / metric / unit / horizon) — that heterogeneity is itself a finding.';
+    if(comparable.length){ const x=disp(comparable[0]);
+      msg+=' Largest comparable slice — '+x.sc+' '+x.me+' ('+(UNIT[x.un]||x.un)+') @ '+x.yr+': <b>'+x.lo+'–'+x.hi+
+           '</b> = <b>'+x.ratio.toFixed(1)+'× spread</b> ['+x.g.length+' forecasts].';
+    }
+  }
+  const v=list.filter(d=>d.verified).length, c=list.filter(d=>d.confirmable).length, rp=list.filter(d=>d.reproducible).length;
+  document.getElementById('spot').innerHTML=msg+
+    '<span class="tiny">Transparency of the '+list.length+' shown: verified '+v+' · confirmable at source '+c+' · reproducible '+rp+'.</span>';
+}
+
+// ---- transparency funnel view ----
+function tierRank(d){ return d.reproducible?3 : (d.confirmable?2 : (d.verified?1:0)); }
+function compareT(a,b){
+  let r=0;
+  if(sortK==='fc') r=a.fc.localeCompare(b.fc)*sortDir;
+  else if(sortK==='tp') r=a.tp.localeCompare(b.tp)*sortDir;
+  else r=(tierRank(a)-tierRank(b))*sortDir;                 // tier (default)
+  if(r===0) r=a.fc.localeCompare(b.fc);
+  return r;
+}
+function renderTiers(){
+  document.getElementById('head').innerHTML =
+    '<th data-k="fc">Forecaster <span class="ar">'+arrow('fc')+'</span></th>'+
+    '<th data-k="tier">Basis <span class="ar">'+arrow('tier')+'</span></th>'+
+    '<th class="ctr">Verified</th>'+
+    '<th class="ctr">Confirmable at source</th>'+
+    '<th class="ctr">Reproducible</th>'+
+    '<th data-k="tp">Transparency <span class="ar">'+arrow('tp')+'</span></th>';
+
+  let list=filtered(); sortDir = (sortK==='tier')? -1 : sortDir; list.sort(compareT);
+  const tb=document.getElementById('rows'); tb.innerHTML='';
+  list.forEach(d=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td><span class="fc">'+d.fc+'</span></td>'+
+      '<td>'+d.scope+' <span class="unit">'+(UNIT[d.unit]||d.unit)+'</span></td>'+
+      '<td class="ctr">'+yn(d.verified)+'</td>'+
+      '<td class="ctr">'+yn(d.confirmable)+'</td>'+
+      '<td class="ctr">'+yn(d.reproducible)+'</td>'+
+      '<td>'+flag(d.tp)+'</td>';
+    tb.appendChild(tr);
+  });
+  const v=list.filter(d=>d.verified).length, c=list.filter(d=>d.confirmable).length, rp=list.filter(d=>d.reproducible).length;
+  document.getElementById('count').textContent=list.length+' of '+data.length+' forecasts shown';
+  document.getElementById('spot').innerHTML=
+    '<b>The funnel.</b> Of '+list.length+' forecasts, <b>'+v+'</b> are verified, <b>'+c+'</b> are confirmable at the '+
+    'author’s own source, and only <b>'+rp+'</b> are reproducible from public method + data. '+
+    'Most figures can be quoted; few can be rebuilt — that gap is the finding.';
+}
+
+// ---- dispatch ----
+function render(){
+  const f = view==='forecasts';
+  document.getElementById('ctl-scope').classList.toggle('hide', !f);
+  document.getElementById('ctl-unit').classList.toggle('hide', !f);
+  if(f) renderForecasts(); else renderTiers();
+  bindHeaders();
+}
+function bindHeaders(){
+  document.querySelectorAll('thead th').forEach(th=>{
+    if(!th.dataset.k || th.dataset.k==='rev') return;
+    th.addEventListener('click',()=>{
+      const k=th.dataset.k;
+      if(sortK===k) sortDir*=-1;
+      else { sortK=k; sortDir=(k==='value'||k==='tier'||k==='verified')?-1:1; }
+      render();
+    });
+  });
+}
+function segHandler(id,set){
+  document.getElementById(id).addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); set(b.dataset.v); render();
+  });
+}
+segHandler('view', v=>{ view=v; sortK=(v==='forecasts')?'scope':'tier'; sortDir=(v==='forecasts')?1:-1; });
+segHandler('scope', v=>{ scope=v; });
+segHandler('unit', v=>{ unit=v; });
+document.getElementById('q').addEventListener('input',e=>{ query=e.target.value; render(); });
+
+render();
+</script>
+</body>
+</html>

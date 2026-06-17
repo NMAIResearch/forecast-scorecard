@@ -1,0 +1,29 @@
+{
+  "title": "The AI Energy-Demand Forecast Scorecard (interactive)",
+  "upload_type": "software",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Milton, N.",
+      "orcid": "0009-0003-4213-7769"
+    }
+  ],
+  "description": "An interactive, explorable front-end to the AI Energy-Demand Forecast Scorecard: a reproducible audit of how the field forecasts data-centre electricity demand, scored on dispersion, the forecasters' own revisions, and transparency. Two views: a forecasts table that measures dispersion only within comparable slices (and otherwise flags incommensurability across units, scopes and horizons), and a transparency funnel (verified, confirmable at the primary source, reproducible). It is a scorecard of forecaster behaviour, not a forecast. Companion to the paper at DOI 10.5281/zenodo.20572928. CC BY 4.0.",
+  "keywords": [
+    "data centre electricity demand",
+    "AI energy",
+    "forecast evaluation",
+    "dispersion",
+    "reproducibility",
+    "transparency",
+    "interactive visualization",
+    "energy forecasting"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.20572928",
+      "scheme": "doi"
+    }
+  ]
+}
