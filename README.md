@@ -2,9 +2,9 @@
 
 An interactive front-end to *The AI Energy-Demand Forecast Scorecard*: a reproducible audit of **how the field forecasts data-centre electricity demand** — scored on dispersion, the forecasters' own revisions, and transparency. It is a scorecard of forecaster *behaviour*, not a forecast.
 
-**Live tool:** https://nmiltonresearch.github.io/forecast-scorecard/
+**Live tool:** https://nmairesearch.github.io/forecast-scorecard/
 **Canonical record (frozen, citable):** [DOI 10.5281/zenodo.20572928](https://doi.org/10.5281/zenodo.20572928)
-**Author:** N. Milton · ORCID [0009-0003-4213-7769](https://orcid.org/0009-0003-4213-7769) · Licence CC BY 4.0
+**Author:** NM AI Research · ORCID [0009-0003-4213-7769](https://orcid.org/0009-0003-4213-7769) · Licence CC BY 4.0
 
 ## What it does
 
