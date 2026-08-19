@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Energy-Demand Forecast Scorecard (interactive)</title>
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('nmai-theme');
+    if (t) { document.documentElement.setAttribute('data-theme', t); }
+  } catch(e){}
+})();
+</script>
 <style>
   :root {
     --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -418,18 +426,18 @@ render();
   var ico = document.getElementById('themeIcon');
   function apply(theme){
     html.setAttribute('data-theme', theme);
-    localStorage.setItem('nmai-theme', theme);
+    try { localStorage.setItem('nmai-theme', theme); } catch(e){}
     if(lbl && ico){
       if(theme === 'dark'){ lbl.textContent = 'THEME: DARK'; ico.textContent = '◐'; }
       else { lbl.textContent = 'THEME: LIGHT'; ico.textContent = '◑'; }
     }
   }
-  var saved = localStorage.getItem('nmai-theme') || 'light';
-  apply(saved);
+  var curr = html.getAttribute('data-theme') || 'light';
+  apply(curr);
   if(btn){
     btn.addEventListener('click', function(){
-      var curr = html.getAttribute('data-theme') || 'light';
-      apply(curr === 'dark' ? 'light' : 'dark');
+      var now = html.getAttribute('data-theme') || 'light';
+      apply(now === 'dark' ? 'light' : 'dark');
     });
   }
 })();
