@@ -1,0 +1,1960 @@
+{
+  "as_of": "2026-10-08",
+  "candidate_admission": {
+    "admitted": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07"
+    ],
+    "rule": "A candidate in CANDIDATE_OBSERVATIONS.json enters spans, the like-for-like comparison and declared comparisons, as a registered observation does, only when CANDIDATE_SUPPORT_REVIEW.json holds a supported receipt bound to its current row and to the candidate source list; admitted lists the candidates that do"
+  },
+  "comparisons": [
+    {
+      "id": "R01",
+      "interpretation": "Source-stated same-base revision (S08). Conditional implied-level change holding the 2023 baseline estimate fixed; not accuracy.",
+      "new": "O11",
+      "old": "O19",
+      "reasons": [
+        "O19 support review: partly supported",
+        "O11 support review: partly supported"
+      ],
+      "status": "not_comparable"
+    },
+    {
+      "id": "R02",
+      "interpretation": "Different base years must be refused.",
+      "new": "O12",
+      "old": "O11",
+      "reasons": [
+        "different base_year",
+        "O11 support review: partly supported"
+      ],
+      "status": "not_comparable"
+    },
+    {
+      "id": "R03",
+      "interpretation": "Publisher-linked installed-capacity forecast revision, not realised growth; the 2035 comparator is implied by date and the stated revision.",
+      "new": "O14",
+      "old": "O13",
+      "reasons": [
+        "O13 support review: partly supported"
+      ],
+      "status": "not_comparable"
+    },
+    {
+      "basis": "Implied forecast-level index; assumes an unchanged physical baseline estimate",
+      "denominator": 2.17,
+      "difference": 0.5300000000000002,
+      "growth_rate_difference_percentage_points": 53,
+      "id": "R04",
+      "interpretation": "Source-stated same-base revision (S09). Conditional implied-level change holding the 2025 baseline estimate fixed; transcript qualification applies.",
+      "n_observations": 2,
+      "new": "O12",
+      "new_value": 2.7,
+      "numerator": 0.5300000000000002,
+      "old": "O20",
+      "old_value": 2.17,
+      "qualifications": [
+        "About 117 per cent versus 2025, stated in August 2026 for the March outlook; that this restates O11 on a different base is inference. Transcript may differ from the audio.",
+        "About 170 per cent versus 2025, from a transcript that may differ from the audio. Do not compare 170 per cent (base 2025) directly with 220 per cent (base 2023). The same answer gives the March figure on the 2025 base, registered as O20."
+      ],
+      "relative_change_percent": 24.423963133640566,
+      "status": "conditional_arithmetic",
+      "support_review": [
+        "supported",
+        "supported"
+      ]
+    },
+    {
+      "basis": "Difference between stated forecast points; not realised growth or forecast accuracy",
+      "denominator": 946,
+      "difference": -1,
+      "id": "R05",
+      "interpretation": "Same-publisher tabulated Base Case values across editions; not a substantive revision claim.",
+      "n_observations": 2,
+      "new": "O03",
+      "new_value": 945,
+      "numerator": -1,
+      "old": "O01",
+      "old_value": 946,
+      "qualifications": [
+        "Stored annex Base Case value for total, as distinct from IT-only, data-centre electricity consumption (sheet labels). The 2026 report's tabulated value for the same quantity is registered as O03. A one-unit difference between tabulated values is not interpreted as a substantive revision. The workbook's World Data sheet distinguishes hyperscale, colocation/service-provider and enterprise facilities; the complete 2025 equipment methodology is not retained.",
+        "Tabulated Base Case value. The report text rounds this projection to about 950 TWh (printed p10 and p24) and describes it as close to the trajectory in the IEA's 2025 report. Model projection, not a measured outcome."
+      ],
+      "relative_change_percent": -0.10570824524312897,
+      "status": "conditional_arithmetic",
+      "support_review": [
+        "supported",
+        "supported"
+      ]
+    },
+    {
+      "basis": "Difference between stated forecast points; not realised growth or forecast accuracy",
+      "denominator": 426,
+      "difference": 0,
+      "id": "R06",
+      "interpretation": "Same-publisher tabulated US Base Case values across editions.",
+      "n_observations": 2,
+      "new": "O18",
+      "new_value": 426,
+      "numerator": 0,
+      "old": "O02",
+      "old_value": 426,
+      "qualifications": [
+        "2025-edition US Base Case projection for 2030 of total, as distinct from IT-only, consumption (sheet labels). The 2026 report restates the US 2030 Base Case total; that value is registered as O18. The workbook's World Data sheet distinguishes hyperscale, colocation/service-provider and enterprise facilities; the complete 2025 equipment methodology is not retained.",
+        "United States total consumption row beneath North America in Table A.4. Model projection, not a measured outcome."
+      ],
+      "relative_change_percent": 0.0,
+      "status": "conditional_arithmetic",
+      "support_review": [
+        "supported",
+        "supported"
+      ]
+    },
+    {
+      "id": "R07",
+      "interpretation": "An upper-end statement must be refused as a point comparison.",
+      "new": "O11",
+      "old": "O10",
+      "reasons": [
+        "an upper-end statement is not a point estimate",
+        "O11 support review: partly supported"
+      ],
+      "status": "not_comparable"
+    }
+  ],
+  "known_unregistered": [
+    {
+      "description": "Global 2030 electricity consumption in the Lift-Off (1,008 TWh), High Efficiency (868 TWh) and Headwinds (833 TWh) cases; other scenarios, not registered.",
+      "forecaster": "IEA",
+      "id": "K01",
+      "locator": "Table A.1 printed p108",
+      "source_id": "S02"
+    },
+    {
+      "description": "2025 values in the table's earlier columns for World (485 TWh) and United States (224 TWh); the Base Case heading sits over the 2030 column. Not registered.",
+      "forecaster": "IEA",
+      "id": "K02",
+      "locator": "Table A.4 printed p110",
+      "source_id": "S02"
+    },
+    {
+      "description": "Global data-centre power demand of 1,400 TWh by 2030; the text attributes it to Exhibit 1, which is a US chart, so its exhibit attribution is internally inconsistent. Not registered.",
+      "forecaster": "McKinsey",
+      "id": "K03",
+      "locator": "Text near the campus-scale discussion",
+      "source_id": "S06"
+    },
+    {
+      "description": "An earlier outlook published about seven months before December 2025; not retained, value not registered.",
+      "forecaster": "BloombergNEF",
+      "id": "K04",
+      "locator": "Opening sentence",
+      "source_id": "S10"
+    },
+    {
+      "description": "US data-centre power demand in 2030 of about 108 GW, up from about 83 GW, using a 451 Research data set; GW basis, not registered.",
+      "forecaster": "Goldman Sachs",
+      "id": "K05",
+      "locator": "Transcript answer on the forecast change",
+      "source_id": "S09"
+    },
+    {
+      "description": "Worldwide data-centre electricity consumption of 447 TWh (2025), 565 TWh (2026) and 702 TWh (2027), including cooling and other infrastructure; not registered because the ledger registers no 2025 to 2027 horizon.",
+      "forecaster": "Gartner",
+      "id": "K06",
+      "locator": "Figure 1",
+      "source_id": "S17"
+    },
+    {
+      "description": "451 Research forecasts 55 GW of new data-centre capacity across PJM through 2030; regional, not registered.",
+      "forecaster": "S&P Global Energy 451 Research",
+      "id": "K07",
+      "locator": "PJM paragraph",
+      "source_id": "S19"
+    },
+    {
+      "description": "Asia Pacific data-centre electricity demand expected to expand up to five-fold by the mid-2030s; regional growth multiple without a stated base or exact year, not registered. The multiple takes demand in the mid-2030s as numerator and demand in an unstated starting year as denominator; neither value is stated, so both are unverified. N=1 publisher projection.",
+      "forecaster": "Deloitte",
+      "id": "K08",
+      "locator": "Key findings",
+      "source_id": "S22"
+    }
+  ],
+  "like_for_like_comparison": {
+    "comparison": [
+      {
+        "excluded_short_of_supported": [],
+        "group": "Australia (National Electricity Market) / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 15.5,
+          "minimum_stated_bound": 15.5,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C02"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 15.5,
+          "minimum_stated_bound": 15.5,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C02"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Australia (National Electricity Market) / annual_electricity / TWh / 2036 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 33.7,
+          "minimum_stated_bound": 33.7,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C03"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 33.7,
+          "minimum_stated_bound": 33.7,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C03"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)"
+          ],
+          "maximum_stated_bound": 33.7,
+          "minimum_stated_bound": 33.7,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C03"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "China (IEA region, including Hong Kong) / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 277,
+          "minimum_stated_bound": 277,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C05"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 277,
+          "minimum_stated_bound": 277,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C05"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C06",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Denmark / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 6.0,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C07"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 6.0,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C07"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Europe (IEA region) / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 114,
+          "minimum_stated_bound": 114,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C04"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 114,
+          "minimum_stated_bound": 114,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C04"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "France / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 15,
+          "minimum_stated_bound": 10,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C06"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 5
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 15,
+          "minimum_stated_bound": 10,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "C06"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 5
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Global / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 945,
+          "n_observations": 3,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O03",
+            "O17",
+            "O27"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 120
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [
+            "O01"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 945,
+          "n_observations": 4,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O01",
+            "O03",
+            "O17",
+            "O27"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 120
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O02",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O18",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Global / data_centre_capacity / GW / 2035 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 389,
+          "minimum_stated_bound": 389,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O23"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 389,
+          "minimum_stated_bound": 389,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O23"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "Global"
+          ],
+          "maximum_stated_bound": 389,
+          "minimum_stated_bound": 389,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O23"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "Global / data_centre_capacity_demand / GW / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 490.7,
+          "minimum_stated_bound": 220,
+          "n_observations": 4,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O09",
+            "O21",
+            "O24",
+            "C01"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 270.7
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 490.7,
+          "minimum_stated_bound": 220,
+          "n_observations": 4,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O09",
+            "O21",
+            "O24",
+            "C01"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 270.7
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O22"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 490.7,
+          "minimum_stated_bound": 121,
+          "n_observations": 5,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O09",
+            "O21",
+            "O22",
+            "O24",
+            "C01"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 369.7,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [
+          "O11",
+          "O19"
+        ],
+        "group": "Global / data_centre_power_demand_growth / percent_growth / 2030 / 2025",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 170,
+          "minimum_stated_bound": 170,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O12"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [
+            "O10",
+            "O20"
+          ],
+          "maximum_stated_bound": 170,
+          "minimum_stated_bound": 117,
+          "n_observations": 3,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O10",
+            "O12",
+            "O20"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 53
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            2023,
+            2025
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "Global"
+          ],
+          "maximum_stated_bound": 170,
+          "minimum_stated_bound": 117,
+          "n_observations": 3,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O10",
+            "O12",
+            "O20"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 53,
+          "superseded": [
+            "O10",
+            "O20"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / annual_electricity / TWh / 2028 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "excluded"
+          ],
+          "maximum_stated_bound": 464,
+          "minimum_stated_bound": 464,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O04"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 464,
+          "minimum_stated_bound": 464,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O04"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded"
+          ],
+          "geographies": [
+            "US"
+          ],
+          "maximum_stated_bound": 464,
+          "minimum_stated_bound": 464,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O04"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / annual_electricity / TWh / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "maximum_stated_bound": 843,
+          "minimum_stated_bound": 380,
+          "n_observations": 5,
+          "n_publishers": 5,
+          "observation_ids": [
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O18"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 463
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [
+            "O02"
+          ],
+          "maximum_stated_bound": 843,
+          "minimum_stated_bound": 380,
+          "n_observations": 6,
+          "n_publishers": 5,
+          "observation_ids": [
+            "O02",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O18"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 463
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O01",
+            "O03",
+            "O17",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "excluded",
+            "excluded_inferred",
+            "included",
+            "unstated"
+          ],
+          "geographies": [
+            "Australia (National Electricity Market)",
+            "China (IEA region, including Hong Kong)",
+            "Denmark",
+            "Europe (IEA region)",
+            "France",
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 1065,
+          "minimum_stated_bound": 6.0,
+          "n_observations": 15,
+          "n_publishers": 10,
+          "observation_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O05",
+            "O07",
+            "O08",
+            "O16",
+            "O17",
+            "O18",
+            "O27",
+            "C02",
+            "C04",
+            "C05",
+            "C06",
+            "C07"
+          ],
+          "open_lower_bounds": [
+            {
+              "id": "O27",
+              "lower_bound": 1200
+            }
+          ],
+          "span_width": 1059.0,
+          "superseded": [
+            "O01",
+            "O02"
+          ]
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / data_centre_capacity / GW / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 151.734,
+          "minimum_stated_bound": 151.734,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O25"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 151.734,
+          "minimum_stated_bound": 151.734,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O25"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "US"
+          ],
+          "maximum_stated_bound": 151.734,
+          "minimum_stated_bound": 151.734,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O25"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0.0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / data_centre_capacity_demand / GW / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 121,
+          "minimum_stated_bound": 121,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O22"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 121,
+          "minimum_stated_bound": 121,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O22"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [
+            "O09",
+            "O21",
+            "O24",
+            "C01"
+          ],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "Global",
+            "US"
+          ],
+          "maximum_stated_bound": 490.7,
+          "minimum_stated_bound": 121,
+          "n_observations": 5,
+          "n_publishers": 3,
+          "observation_ids": [
+            "O09",
+            "O21",
+            "O22",
+            "O24",
+            "C01"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 369.7,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / data_centre_capacity_demand / GW / 2035 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 176,
+          "minimum_stated_bound": 176,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O26"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 176,
+          "minimum_stated_bound": 176,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O26"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "US"
+          ],
+          "maximum_stated_bound": 176,
+          "minimum_stated_bound": 176,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O26"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [],
+        "group": "US / installed_capacity / GW / 2030 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 118,
+          "minimum_stated_bound": 118,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O15"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 118,
+          "minimum_stated_bound": 118,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O15"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "US"
+          ],
+          "maximum_stated_bound": 118,
+          "minimum_stated_bound": 118,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O15"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0,
+          "superseded": []
+        }
+      },
+      {
+        "excluded_short_of_supported": [
+          "O13"
+        ],
+        "group": "US / installed_capacity / GW / 2035 / None",
+        "like_for_like": {
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "maximum_stated_bound": 194,
+          "minimum_stated_bound": 194,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O14"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_geography_any_vintage_or_base_year": {
+          "added_observations": [],
+          "maximum_stated_bound": 194,
+          "minimum_stated_bound": 194,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O14"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0
+        },
+        "same_metric_unit_and_year": {
+          "added_observations": [],
+          "base_years": [
+            null
+          ],
+          "crypto_scopes": [
+            "unstated"
+          ],
+          "geographies": [
+            "US"
+          ],
+          "maximum_stated_bound": 194,
+          "minimum_stated_bound": 194,
+          "n_observations": 1,
+          "n_publishers": 1,
+          "observation_ids": [
+            "O14"
+          ],
+          "open_lower_bounds": [],
+          "span_width": 0,
+          "superseded": []
+        }
+      }
+    ],
+    "groups": 17,
+    "groups_mixing_cryptocurrency_scopes": [
+      "US / annual_electricity / TWh / 2030 / None"
+    ],
+    "groups_with_more_than_one_observation": 3,
+    "rule": "Spans of stated bounds among observations with a current supported receipt. A like-for-like group shares geography, metric, unit, target year and base year and holds one vintage per publisher series; the same-geography set drops the base-year and vintage conditions; the same-metric set keeps only metric, unit and target year. Observations short of a supported receipt are excluded from every set and listed. Open lower bounds are listed, not used as extrema. Not a probability interval, consensus estimate or convergence test."
+  },
+  "maker_assessment": {
+    "supported": 27
+  },
+  "observation_count": 27,
+  "provider_models_reconstructed": 0,
+  "recorded_value_spans": [
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Australia (National Electricity Market) / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 15.5,
+      "minimum_stated_bound": 15.5,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C02"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-08-25"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Australia (National Electricity Market) / annual_electricity / TWh / 2036 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 33.7,
+      "minimum_stated_bound": 33.7,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C03"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-08-25"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "China (IEA region, including Hong Kong) / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 277,
+      "minimum_stated_bound": 277,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C05"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-04-16 (publication date on the IEA's report page)"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Denmark / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 6.0,
+      "minimum_stated_bound": 6.0,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C07"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2025-11 (printed month)"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Europe (IEA region) / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 114,
+      "minimum_stated_bound": 114,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C04"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-04-16 (publication date on the IEA's report page)"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "France / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 15,
+      "minimum_stated_bound": 10,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "C06"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "not verified (the URL path and file name carry 2025-12-23 and the PDF's metadata modification date is 23 December 2025)"
+      ],
+      "shapes": [
+        "scenario_range"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Global / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 1065,
+      "minimum_stated_bound": 945,
+      "n_observations": 3,
+      "n_publishers": 3,
+      "observation_ids": [
+        "O03",
+        "O17",
+        "O27"
+      ],
+      "open_lower_bounds": [
+        {
+          "id": "O27",
+          "lower_bound": 1200
+        }
+      ],
+      "publication_vintages": [
+        "2024-11-19",
+        "2026-04 (colophon month; release day not verified)",
+        "2026-06-10"
+      ],
+      "shapes": [
+        "lower_bound",
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Global / data_centre_capacity / GW / 2035 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 389,
+      "minimum_stated_bound": 389,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O23"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-09-18"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Global / data_centre_capacity_demand / GW / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 490.7,
+      "minimum_stated_bound": 220,
+      "n_observations": 4,
+      "n_publishers": 3,
+      "observation_ids": [
+        "O09",
+        "O21",
+        "O24",
+        "C01"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2025-08",
+        "2026-06-10",
+        "2026-06-30",
+        "2026-09-16"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "Global / data_centre_power_demand_growth / percent_growth / 2030 / 2025",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 170,
+      "minimum_stated_bound": 170,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O12"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-09-01"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "excluded"
+      ],
+      "group": "US / annual_electricity / TWh / 2028 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 464,
+      "minimum_stated_bound": 464,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O04"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-06-18"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "excluded",
+        "excluded_inferred",
+        "included",
+        "unstated"
+      ],
+      "group": "US / annual_electricity / TWh / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 843,
+      "minimum_stated_bound": 380,
+      "n_observations": 5,
+      "n_publishers": 5,
+      "observation_ids": [
+        "O05",
+        "O07",
+        "O08",
+        "O16",
+        "O18"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2024-09",
+        "2026-04 (colophon month; release day not verified)",
+        "2026-06-18",
+        "brief undated; cited white paper dated 2026",
+        "publication date unverified"
+      ],
+      "shapes": [
+        "point",
+        "scenario_range"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "US / data_centre_capacity / GW / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 151.734,
+      "minimum_stated_bound": 151.734,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O25"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-06-15"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "US / data_centre_capacity_demand / GW / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 121,
+      "minimum_stated_bound": 121,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O22"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-07-31"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "US / data_centre_capacity_demand / GW / 2035 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 176,
+      "minimum_stated_bound": 176,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O26"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2025-04-09"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "US / installed_capacity / GW / 2030 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 118,
+      "minimum_stated_bound": 118,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O15"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-07-29"
+      ],
+      "shapes": [
+        "point"
+      ]
+    },
+    {
+      "crypto_scopes": [
+        "unstated"
+      ],
+      "group": "US / installed_capacity / GW / 2035 / None",
+      "interpretation": "Recorded-value span only; the minimum and maximum stated bounds exclude open lower bounds, which are listed in open_lower_bounds; observation and publisher counts include all group members; superseded same-publisher vintages are listed separately; boundaries, scenarios and shapes are not normalised",
+      "maximum_stated_bound": 194,
+      "minimum_stated_bound": 194,
+      "n_observations": 1,
+      "n_publishers": 1,
+      "observation_ids": [
+        "O14"
+      ],
+      "open_lower_bounds": [],
+      "publication_vintages": [
+        "2026-07-29"
+      ],
+      "shapes": [
+        "point"
+      ]
+    }
+  ],
+  "scope_limits": [
+    "Convenience sample of existing named institutions; not a census or forecast-accuracy test.",
+    "Source matching confirms what publishers state, not that the forecasts are true.",
+    "No underlying provider model has been reconstructed in this revision.",
+    "Unresolved sources are retained separately and excluded from calculated envelopes.",
+    "Recorded-value spans list superseded same-publisher vintages separately and retain scope, scenario and shape mismatches; no pooled consensus, uplift or model ranking is calculated.",
+    "No metres, site inspections or realised national US data-centre outcome series were collected.",
+    "A document available publicly does not prove that its complete input data and executable model are public.",
+    "Disclosed input links among registered providers: the IEA model relies on a bottom-up approach developed by LBNL (S02, Annex A methodology); Goldman Sachs uses a 451 Research data set (S09); Deloitte's November 2024 estimate cites Goldman Sachs and EPRI among its sources (S13, endnote 1), which predates their later registered observations; Deloitte's April 2025 estimate names LBNL's 2024 data-centre energy report among its inputs (S20, endnote 1), an earlier report than the registered LBNL 2025 update (S03). Agreement among linked providers cannot automatically be counted as independent confirmation; the exact shared inputs and vintages are not established.",
+    "Support review receipts bind each observation and the complete source catalogue by digest. Changing a claim field or bound evidence makes its receipt stale; the status becomes review stale and arithmetic is refused. The maker_assessment field is excluded from the claim digest. Only observations with a current supported receipt enter arithmetic or spans.",
+    "A currency sweep on 8 October 2026 searched each registered publisher for newer editions; it is a bounded search, not proof that no newer forecast exists."
+  ],
+  "source_count_used": 19,
+  "superseded_observations": [
+    {
+      "forecaster": "IEA",
+      "id": "O01",
+      "superseded_by": "O03"
+    },
+    {
+      "forecaster": "IEA",
+      "id": "O02",
+      "superseded_by": "O18"
+    },
+    {
+      "forecaster": "Goldman Sachs",
+      "id": "O10",
+      "superseded_by": "O11"
+    },
+    {
+      "forecaster": "Goldman Sachs",
+      "id": "O20",
+      "superseded_by": "O12"
+    }
+  ],
+  "support_review": {
+    "by_observation": {
+      "O01": "supported",
+      "O02": "supported",
+      "O03": "supported",
+      "O04": "supported",
+      "O05": "supported",
+      "O06": "supported",
+      "O07": "supported",
+      "O08": "supported",
+      "O09": "supported",
+      "O10": "supported",
+      "O11": "partly supported",
+      "O12": "supported",
+      "O13": "partly supported",
+      "O14": "supported",
+      "O15": "supported",
+      "O16": "supported",
+      "O17": "supported",
+      "O18": "supported",
+      "O19": "partly supported",
+      "O20": "supported",
+      "O21": "supported",
+      "O22": "supported",
+      "O23": "supported",
+      "O24": "supported",
+      "O25": "supported",
+      "O26": "supported",
+      "O27": "supported"
+    },
+    "counts": {
+      "partly supported": 3,
+      "supported": 24
+    },
+    "receipts": 27,
+    "rule": "Arithmetic and spans use only observations whose current row and source digests carry a supported receipt"
+  },
+  "unresolved": [
+    {
+      "forecaster": "Gartner",
+      "horizon": 2030,
+      "id": "U01",
+      "lead_operator": "greater_than",
+      "lead_value": 1200,
+      "legacy_value": 980,
+      "reason": "The earlier ledger's 980 TWh remains unverified. The June 2026 release is now retained (S17): its 290 GW for 2030 is registered as O24 and its over-1,200 TWh lower bound as O27. Neither 980 nor the lower bound enters a comparison.",
+      "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-10-gartner-says-data-center-electricity-demand-to-grow-26-percent-in-2026",
+      "status": "unverified",
+      "unit": "TWh"
+    },
+    {
+      "forecaster": "BCG",
+      "horizon": 2030,
+      "id": "U02",
+      "legacy_value": 1050,
+      "reason": "No supporting original for this legacy attribution located in the bounded search. No paywall bypass; retained old row is not a verified high endpoint. BCG's November 2024 article, retained in the currency sweep, states US data-centre electricity demand of '100 to 130 gigawatt hours in 2030', units as printed; it does not support the 1,050 TWh attribution.",
+      "status": "unverified",
+      "unit": "TWh"
+    },
+    {
+      "forecaster": "LBNL / EPRI old editions",
+      "id": "U04",
+      "reason": "The legacy 2024 intervals remain in LEGACY.csv; no fresh support acceptance for those numeric endpoints. LBNL download attempt produced an empty file.",
+      "status": "unverified"
+    }
+  ],
+  "version": "0.4"
+}

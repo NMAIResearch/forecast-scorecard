@@ -1,0 +1,1257 @@
+{
+  "purpose": "Independent claim-support verdicts, each bound to the digest of one observation row and of the complete source catalogue.",
+  "digest_method": "SHA-256 of compact sort-keyed UTF-8 JSON. row_sha256 covers the observation row without maker_assessment; catalogue_sha256 covers every source record in SOURCE_CATALOGUE.json in identifier order, so a change to any source record, including auxiliary evidence, makes every receipt stale. Stale receipts confer nothing.",
+  "reviews": [
+    {
+      "observation_id": "O01",
+      "row_sha256": "5ae6df2797bd7c753fa574500072a44af6967c917b433099d76e9fc146806b16",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T192948Z-48320b9e37d1)",
+      "review_record_sha256": "b86fb2e4fb0a97ae775c37cb677e40d2faf29aca56e837ddcc754543ba1db7a5",
+      "locator": "Regional Data cell G57 (line 589)",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 2",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are supported by S01 and S02 cross-references, with maker workflow statements unassessed under brief rule 2."
+    },
+    {
+      "observation_id": "O02",
+      "row_sha256": "aca0ba54bbf62a76ff174f94c46bec874985830f6088d7774ab284e01d846fd0",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T192948Z-48320b9e37d1)",
+      "review_record_sha256": "b86fb2e4fb0a97ae775c37cb677e40d2faf29aca56e837ddcc754543ba1db7a5",
+      "locator": "Regional Data cell G59 (line 613)",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are supported by S01 and S02 cross-references, with maker workflow statements unassessed under brief rule 2."
+    },
+    {
+      "observation_id": "O03",
+      "row_sha256": "5c052aa024d949d47e3a38776c23e3b16ab8f2c1aa6407a649a6ce6adc494d02",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T192948Z-48320b9e37d1)",
+      "review_record_sha256": "b86fb2e4fb0a97ae775c37cb677e40d2faf29aca56e837ddcc754543ba1db7a5",
+      "locator": "Table A.4 printed p110 (line 4998)",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by S02, with maker workflow statements unassessed under brief rule 2."
+    },
+    {
+      "observation_id": "O04",
+      "row_sha256": "6baf31ca6fc81e163a30b338e599692bba75eae8b467db3a2afb778b86933240",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T202349Z-e3b9c9c2cd80)",
+      "review_record_sha256": "9b37e9ad244996a52f35fa28b875dcc884fc15972edf555adb23d070167b610b",
+      "locator": "Section 2, Total Energy Use, printed page 8",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported, and the unassessed maker clauses do not diminish overall support."
+    },
+    {
+      "observation_id": "O05",
+      "row_sha256": "a62a2d4149f38019e1ae6ecb448ffc21a6799873911f6c82244edf57afd01293",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T202349Z-e3b9c9c2cd80)",
+      "review_record_sha256": "9b37e9ad244996a52f35fa28b875dcc884fc15972edf555adb23d070167b610b",
+      "locator": "Section 2, Table 2, printed page 9",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by Table 2 and accompanying text in S03."
+    },
+    {
+      "observation_id": "O06",
+      "row_sha256": "78ed29579053f7eec4b911a422c376641bf6c495892fe0e92798ced423366697",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T202349Z-e3b9c9c2cd80)",
+      "review_record_sha256": "9b37e9ad244996a52f35fa28b875dcc884fc15972edf555adb23d070167b610b",
+      "locator": "Section 2, Total Energy Use, printed page 8",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All verifiable fields are supported by the primary text."
+    },
+    {
+      "observation_id": "O07",
+      "row_sha256": "37784b35680d41eeceb1c86e36793cab4232b80e43e4f48e2af485d7943b381b",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T202349Z-e3b9c9c2cd80)",
+      "review_record_sha256": "9b37e9ad244996a52f35fa28b875dcc884fc15972edf555adb23d070167b610b",
+      "locator": "PDF page 2, annual-energy paragraph",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are fully supported by S04 and cross-referenced in S03."
+    },
+    {
+      "observation_id": "O08",
+      "row_sha256": "239f12a3277960baf8b2576685b24153956feb3a43e99ed1c846e6ed30cff20b",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 11 (launcher run 20261008T203631Z-2d3b4cd43bb5)",
+      "review_record_sha256": "e87e3c7f72c0192369bbacaa4238cb6e3f7ab79dff147163a31e61bcf4bc43bd",
+      "locator": "extractions/mckinsey-sate-power.txt line 83, printed p3, Exhibit 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by Exhibit 1 and footnote 1 of S05, with the maker inspection clause unassessed under item 2."
+    },
+    {
+      "observation_id": "O09",
+      "row_sha256": "25aa41f92931fda7d1747936a6fc387a4826b76d4ddce8b4980471b9442967e0",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 11 (launcher run 20261008T203631Z-2d3b4cd43bb5)",
+      "review_record_sha256": "e87e3c7f72c0192369bbacaa4238cb6e3f7ab79dff147163a31e61bcf4bc43bd",
+      "locator": "extractions/mckinsey-capacity.txt line 29, printed p2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are supported by the text and Exhibit 2 of S06, with the maker inspection clause unassessed under item 2."
+    },
+    {
+      "observation_id": "O10",
+      "row_sha256": "9c21cb810942a1c97267ce321eafd2967f71b208a98fd745fb390fdf31255178",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T204331Z-a071c96bd77b)",
+      "review_record_sha256": "ca8b250fcca9e28cd4da6606f5c266d33efecbac226f9106f1819b66bdfce4c5",
+      "locator": "extractions/goldman2025.txt:1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3",
+        "superseded_by"
+      ],
+      "reason": "All source-verifiable components are supported by the primary article, while unassessed ledger-maker statements do not diminish support under the governing brief."
+    },
+    {
+      "observation_id": "O11",
+      "row_sha256": "6a9e3c5993c693063b0b53e9deac9b6fb6e048f7bc73483f68a42c78b9d50477",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T204331Z-a071c96bd77b)",
+      "review_record_sha256": "ca8b250fcca9e28cd4da6606f5c266d33efecbac226f9106f1819b66bdfce4c5",
+      "locator": "extractions/goldman2026march.txt:1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The quantitative projection is supported by S08, but geographic scope is unstated in the primary source and rests on external inference."
+    },
+    {
+      "observation_id": "O12",
+      "row_sha256": "7f946f0ed0de45e06301c74d3b6ce479f3a2c6f7efa61d44855fde919b1c556e",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 6 of 11 (launcher run 20261008T205146Z-4d834c43ac70)",
+      "review_record_sha256": "2642657dc11a4389738faa44e08f1d9bd3346f110f2c015cd4dd49c4306272cc",
+      "locator": "extractions/goldman2026sept.txt line 1, Brian Singer transcript answer",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components of O12 are fully supported by the primary text in S09."
+    },
+    {
+      "observation_id": "O13",
+      "row_sha256": "f7ab5511a0c89c2864a8d357460b496bf2a683ba05fece9c532c3cb4a9dc6fb5",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T210000Z-135fd0e79be9)",
+      "review_record_sha256": "b7794e5c96d9814998ec13e84ac22344deff7e04d04366dfa5cb159a6128e87f",
+      "locator": "extractions/bnef2025.txt:1",
+      "components_short_of_supported": [
+        "metric"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The claim is partly supported because S10 words the quantity as data-centre power demand rather than installed capacity, requiring an inference from S11."
+    },
+    {
+      "observation_id": "O14",
+      "row_sha256": "ea073b383721932291ddc83c05f4707441087b9ff9907e140a4cf0cbe9ea2b6f",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T210000Z-135fd0e79be9)",
+      "review_record_sha256": "b7794e5c96d9814998ec13e84ac22344deff7e04d04366dfa5cb159a6128e87f",
+      "locator": "extractions/bnef2026.txt:1, Item 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are supported by S11, and the unassessed maker action does not prevent full support."
+    },
+    {
+      "observation_id": "O15",
+      "row_sha256": "f08f260923f2c0b225b72f4f07d467f098e9baa41bcc7aeb6107b5d3ccf55217",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T210000Z-135fd0e79be9)",
+      "review_record_sha256": "b7794e5c96d9814998ec13e84ac22344deff7e04d04366dfa5cb159a6128e87f",
+      "locator": "extractions/bnef2026.txt:1, Item 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are supported by S11, and the unassessed maker action does not prevent full support."
+    },
+    {
+      "observation_id": "O16",
+      "row_sha256": "3cf63677a79528f2b03854c4356a26903fa19cfadcf5dd902d8bc78f2f120305",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 8 of 11 (launcher run 20261008T210650Z-ca794073579f)",
+      "review_record_sha256": "1fdd83e2a5516f2e9c66f07749bde276217b2970a3e08b4de33e38144e8fc72c",
+      "locator": "extractions/sp2026us.txt:1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are supported, while maker-action clauses remain unassessed per brief rule 2."
+    },
+    {
+      "observation_id": "O17",
+      "row_sha256": "e0e3d3019f8eb9963c928bb28759cc16be80bc21c3d74c78168ef172fb218a16",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 9 of 11 (launcher run 20261008T211256Z-c9597bc1ae61)",
+      "review_record_sha256": "c7292cfb1b413005dc661fcba4f40808860b932be28b9d28bdc1829083db47c8",
+      "locator": "extractions/deloitte-power.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are supported by S13, and the ledger-maker method statement is unassessed under brief instruction 2."
+    },
+    {
+      "observation_id": "O18",
+      "row_sha256": "0123bf8376bc5afd576873de9860821b2b1c4ae27cefe6c0489407462867e5f6",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T192948Z-48320b9e37d1)",
+      "review_record_sha256": "b86fb2e4fb0a97ae775c37cb677e40d2faf29aca56e837ddcc754543ba1db7a5",
+      "locator": "Table A.4 printed p110 (line 5000)",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by S02, with maker workflow statements unassessed under brief rule 2."
+    },
+    {
+      "observation_id": "O19",
+      "row_sha256": "d52d3a4a8dc131eb331da903b2e295dc8b229a4585036b3f621083c261d9b84e",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T204331Z-a071c96bd77b)",
+      "review_record_sha256": "ca8b250fcca9e28cd4da6606f5c266d33efecbac226f9106f1819b66bdfce4c5",
+      "locator": "extractions/goldman2026march.txt:1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "The prior outlook value and its supersession are supported by S08, but geographic scope is unstated in the source and rests on external inference."
+    },
+    {
+      "observation_id": "O20",
+      "row_sha256": "9afd9b7cd3bdcf72e1ab792e7efbe10328152e7a26e341d131d5f18d2adc534b",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 6 of 11 (launcher run 20261008T205146Z-4d834c43ac70)",
+      "review_record_sha256": "2642657dc11a4389738faa44e08f1d9bd3346f110f2c015cd4dd49c4306272cc",
+      "locator": "extractions/goldman2026sept.txt line 1, Brian Singer transcript answer",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components of O20 are fully supported by the primary text in S09."
+    },
+    {
+      "observation_id": "O21",
+      "row_sha256": "046268d1f800931595fb9560e622446315cc14b6863498c2a07b2eda3d64ee6d",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T211931Z-71b5331fd58c)",
+      "review_record_sha256": "1252d796d7a8fe048058aedceeb7eb8ece60fa48e1bc1aeee93dff3efd3d6aba",
+      "locator": "extractions/s14.txt:38",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by the retained text of source S14."
+    },
+    {
+      "observation_id": "O22",
+      "row_sha256": "8a89130d93805cb8ca52bab467e9b264c4f532e94481d378e256cd1ea9f590d6",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T211931Z-71b5331fd58c)",
+      "review_record_sha256": "1252d796d7a8fe048058aedceeb7eb8ece60fa48e1bc1aeee93dff3efd3d6aba",
+      "locator": "extractions/s15.txt:55",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by the retained text of source S15."
+    },
+    {
+      "observation_id": "O23",
+      "row_sha256": "18bd51314b4e720ef65129901c5056492f83c6824fc720c3287c3381c55d4df1",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T211931Z-71b5331fd58c)",
+      "review_record_sha256": "1252d796d7a8fe048058aedceeb7eb8ece60fa48e1bc1aeee93dff3efd3d6aba",
+      "locator": "extractions/s16.txt:43",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "method_description clause 4"
+      ],
+      "reason": "All source-verifiable components are supported by the retained text of source S16."
+    },
+    {
+      "observation_id": "O24",
+      "row_sha256": "4e1f31700d4c6e28359254183bb30f96e95c8ee6bfa04ef5cae73ca35a9c78ae",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 11 of 11 (launcher run 20261008T212630Z-030a9d312548)",
+      "review_record_sha256": "0ccf9783df66208ddc0221c14c488b00d9832f2b450cbab0284cf04a0e6fb8bb",
+      "locator": "extractions/s17.txt:260",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "qualification clause 3",
+        "qualification clause 4"
+      ],
+      "reason": "All source-verifiable components are fully supported by the retained press release, with unassessed components strictly limited to maker actions."
+    },
+    {
+      "observation_id": "O25",
+      "row_sha256": "ccb633e81abc5ffd7147abdae27f3c8d1cbb6f2540bb8d58e5fe2506507583ad",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 8 of 11 (launcher run 20261008T210650Z-ca794073579f)",
+      "review_record_sha256": "1fdd83e2a5516f2e9c66f07749bde276217b2970a3e08b4de33e38144e8fc72c",
+      "locator": "extractions/s18.txt:1136",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by S18, and maker-action clauses are unassessed per brief rule 2."
+    },
+    {
+      "observation_id": "O26",
+      "row_sha256": "437b64140fd5923b9e91bc96dad3123156001375fcfadee259e57da5de40a10a",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 9 of 11 (launcher run 20261008T211256Z-c9597bc1ae61)",
+      "review_record_sha256": "c7292cfb1b413005dc661fcba4f40808860b932be28b9d28bdc1829083db47c8",
+      "locator": "extractions/s20.txt line 245",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 6"
+      ],
+      "reason": "All source-verifiable components are supported by S20 and S21, and unassessed ledger-maker statements do not impair overall support."
+    },
+    {
+      "observation_id": "O27",
+      "row_sha256": "88c8a27a5dd426ce416a680d5212174de559f57625f1f5d368186ecf3ccbab92",
+      "catalogue_sha256": "d23e9b1bf938bf79b6db6df7771b338b482d4a742e9868da3216c3ac1b116ecf",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 11 of 11 (launcher run 20261008T212630Z-030a9d312548)",
+      "review_record_sha256": "0ccf9783df66208ddc0221c14c488b00d9832f2b450cbab0284cf04a0e6fb8bb",
+      "locator": "extractions/s17.txt:304",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by the retained press release, with unassessed components strictly limited to maker actions."
+    }
+  ],
+  "method": "Source-first claim-by-claim review. The reviewer received a brief, neutral claims and the retained sources with labelled extractions, without the makers' assessments or earlier reviews, in eleven separate read-only runs. Each claim was split into atomic components with one verdict each; statements about the makers' own conduct were marked unassessed and do not by themselves lower an overall verdict. Every quoted passage was matched mechanically by the parent against the cited extraction or the retained original. Matching establishes text occurrence only.",
+  "quote_matching": {
+    "matched": 491,
+    "not_matched": 0
+  },
+  "source_values_and_links": [
+    {
+      "claim_id": "K01",
+      "verdict": "supported",
+      "locator": "Table A.1 printed p108",
+      "reason": "All source-verifiable scenario values are supported, and the unassessed maker clause does not diminish overall support under brief rule 2."
+    },
+    {
+      "claim_id": "K02",
+      "verdict": "supported",
+      "locator": "Table A.4 printed p110",
+      "reason": "All source-verifiable components are supported by Table A.4, and the unassessed maker clause does not preclude overall support under brief rule 2."
+    },
+    {
+      "claim_id": "L01",
+      "verdict": "supported",
+      "locator": "S02 Annex A methodology section; S09 transcript; S13 endnote 1; S20 endnote 1",
+      "reason": "All provider-disclosed input links are fully supported across the four sources, while the methodological qualification clauses are unassessed maker statements permitted under brief rule 2."
+    },
+    {
+      "claim_id": "K03",
+      "verdict": "supported",
+      "locator": "extractions/mckinsey-capacity.txt line 63, printed p2",
+      "reason": "Both source-verifiable clauses are supported by the text and Exhibit 1 of S06, with registration status unassessed under item 2."
+    },
+    {
+      "claim_id": "K05",
+      "verdict": "supported",
+      "locator": "extractions/goldman2026sept.txt line 1, Carly Davenport transcript answer",
+      "reason": "All source-verifiable clauses of K05 are fully supported by Carly Davenport's transcript answer in S09."
+    },
+    {
+      "claim_id": "K04",
+      "verdict": "supported",
+      "locator": "extractions/bnef2025.txt:1",
+      "reason": "The source-verifiable clause is supported by S10, and the unassessed maker action does not prevent full support."
+    },
+    {
+      "claim_id": "K07",
+      "verdict": "supported",
+      "locator": "extractions/s19.txt:1144",
+      "reason": "The quantitative regional forecast is supported, and the ledger non-registration classification is unassessed per brief rule 2."
+    },
+    {
+      "claim_id": "K08",
+      "verdict": "supported",
+      "locator": "extractions/s22.txt line 50",
+      "reason": "All descriptive clauses for the unregistered Asia Pacific multiple are supported by S22 and verified absences in the source text."
+    },
+    {
+      "claim_id": "K06",
+      "verdict": "supported",
+      "locator": "extractions/s17.txt:287-299",
+      "reason": "The source-verifiable quantities and segments in Figure 1 are fully supported, with the unassessed component strictly limited to maker actions."
+    }
+  ],
+  "parent_notes": [
+    "O11 and O19: the S08 extraction contains 'global' and 'worldwide' only in site navigation; no statement of the forecast's geography was found, so the partly supported geography verdicts stand.",
+    "Part 3: the reviewing tool reported status ERROR (Your previous response was cut off because it exceeded the output token limit\nPlease conti) after the part had returned complete, schema-valid output covering every component with matching acknowledgements; its verdicts are used.",
+    "Part 10: the reviewing tool reported status ERROR (Your previous response contained an improperly formatted function call: Malformed function) after the part had returned complete, schema-valid output covering every component with matching acknowledgements; its verdicts are used.",
+    "historical_reviews holds receipts from earlier candidates. They bind earlier rows or an earlier source catalogue and never count as current."
+  ],
+  "historical_reviews": [
+    {
+      "observation_id": "O01",
+      "row_sha256": "5ae6df2797bd7c753fa574500072a44af6967c917b433099d76e9fc146806b16",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 4 (launcher run 20261008T083824Z-19882ad0d765)",
+      "review_record_sha256": "60b1326897933788859788d61da87a74e38947a4a0e3068c9ff1907cb4e23887",
+      "locator": "Regional Data cell G57",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are supported by the IEA 2025 spreadsheet annex and cross-referenced 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O02",
+      "row_sha256": "aca0ba54bbf62a76ff174f94c46bec874985830f6088d7774ab284e01d846fd0",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 4 (launcher run 20261008T083824Z-19882ad0d765)",
+      "review_record_sha256": "60b1326897933788859788d61da87a74e38947a4a0e3068c9ff1907cb4e23887",
+      "locator": "Regional Data cell G59",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are supported by the IEA 2025 spreadsheet annex and cross-referenced 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O03",
+      "row_sha256": "5c052aa024d949d47e3a38776c23e3b16ab8f2c1aa6407a649a6ce6adc494d02",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 4 (launcher run 20261008T083824Z-19882ad0d765)",
+      "review_record_sha256": "60b1326897933788859788d61da87a74e38947a4a0e3068c9ff1907cb4e23887",
+      "locator": "Table A.1 printed p108",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by the primary report text and tables.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O04",
+      "row_sha256": "6baf31ca6fc81e163a30b338e599692bba75eae8b467db3a2afb778b86933240",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/lbnl-2025-update.txt:371-372",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by S03, with maker actions marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O05",
+      "row_sha256": "a62a2d4149f38019e1ae6ecb448ffc21a6799873911f6c82244edf57afd01293",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/lbnl-2025-update.txt:410-416",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by S03, with maker-action components marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O06",
+      "row_sha256": "78ed29579053f7eec4b911a422c376641bf6c495892fe0e92798ced423366697",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/lbnl-2025-update.txt:365-366",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by S03, with maker-action components marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O07",
+      "row_sha256": "37784b35680d41eeceb1c86e36793cab4232b80e43e4f48e2af485d7943b381b",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/epri2026report.txt:67-69",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are fully supported by S04, with ledger maker actions marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O08",
+      "row_sha256": "239f12a3277960baf8b2576685b24153956feb3a43e99ed1c846e6ed30cff20b",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/mckinsey-sate-power.txt:91",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by S05, with maker meta-statements marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O09",
+      "row_sha256": "25aa41f92931fda7d1747936a6fc387a4826b76d4ddce8b4980471b9442967e0",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 2 of 4 (launcher run 20261008T085202Z-90345747d404)",
+      "review_record_sha256": "448f82bbd872c04f2f9225a38bb97760d3a6c385a255b84ea69c02ff3bf7985a",
+      "locator": "extractions/mckinsey-capacity.txt:29-30",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are fully supported by S06, with maker-action components marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O10",
+      "row_sha256": "9c21cb810942a1c97267ce321eafd2967f71b208a98fd745fb390fdf31255178",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 4 (launcher run 20261008T090433Z-e4b9947c90b4)",
+      "review_record_sha256": "5098dd2c26a5e02980fa682d5613cd14b1e8920108ef50dcfa5c09691bea72d8",
+      "locator": "extractions/goldman2025.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components of claim O10 are supported by the primary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O11",
+      "row_sha256": "6a9e3c5993c693063b0b53e9deac9b6fb6e048f7bc73483f68a42c78b9d50477",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 4 (launcher run 20261008T090433Z-e4b9947c90b4)",
+      "review_record_sha256": "5098dd2c26a5e02980fa682d5613cd14b1e8920108ef50dcfa5c09691bea72d8",
+      "locator": "extractions/goldman2026march.txt line 1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "Claim O11 is partly supported overall because global geography is not explicitly stated in source S08.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O12",
+      "row_sha256": "7f946f0ed0de45e06301c74d3b6ce479f3a2c6f7efa61d44855fde919b1c556e",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 4 (launcher run 20261008T090433Z-e4b9947c90b4)",
+      "review_record_sha256": "5098dd2c26a5e02980fa682d5613cd14b1e8920108ef50dcfa5c09691bea72d8",
+      "locator": "extractions/goldman2026sept.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components of claim O12 are supported by the primary transcript.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O13",
+      "row_sha256": "f7ab5511a0c89c2864a8d357460b496bf2a683ba05fece9c532c3cb4a9dc6fb5",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 4 (launcher run 20261008T091819Z-68ffc5ce2cf0)",
+      "review_record_sha256": "ebbd33c856340033caa56309cb18f55d27481872ab58f9e56133f14bf97a1859",
+      "locator": "Paragraph 1 line 1",
+      "components_short_of_supported": [
+        "metric"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The claim is partly supported overall because the primary source publishes the metric as power demand in GW rather than installed capacity.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O14",
+      "row_sha256": "ea073b383721932291ddc83c05f4707441087b9ff9907e140a4cf0cbe9ea2b6f",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 4 (launcher run 20261008T091819Z-68ffc5ce2cf0)",
+      "review_record_sha256": "ebbd33c856340033caa56309cb18f55d27481872ab58f9e56133f14bf97a1859",
+      "locator": "Item 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are supported by S11, and the unassessed maker clause does not diminish overall support.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O15",
+      "row_sha256": "f08f260923f2c0b225b72f4f07d467f098e9baa41bcc7aeb6107b5d3ccf55217",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 4 (launcher run 20261008T091819Z-68ffc5ce2cf0)",
+      "review_record_sha256": "ebbd33c856340033caa56309cb18f55d27481872ab58f9e56133f14bf97a1859",
+      "locator": "Item 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by S11.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O16",
+      "row_sha256": "3cf63677a79528f2b03854c4356a26903fa19cfadcf5dd902d8bc78f2f120305",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 4 (launcher run 20261008T091819Z-68ffc5ce2cf0)",
+      "review_record_sha256": "ebbd33c856340033caa56309cb18f55d27481872ab58f9e56133f14bf97a1859",
+      "locator": "Opening summary",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported, and unassessed maker clauses do not diminish overall support.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O17",
+      "row_sha256": "e0e3d3019f8eb9963c928bb28759cc16be80bc21c3d74c78168ef172fb218a16",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 4 (launcher run 20261008T091819Z-68ffc5ce2cf0)",
+      "review_record_sha256": "ebbd33c856340033caa56309cb18f55d27481872ab58f9e56133f14bf97a1859",
+      "locator": "Opening paragraph",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by S13.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O18",
+      "row_sha256": "0123bf8376bc5afd576873de9860821b2b1c4ae27cefe6c0489407462867e5f6",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 4 (launcher run 20261008T083824Z-19882ad0d765)",
+      "review_record_sha256": "60b1326897933788859788d61da87a74e38947a4a0e3068c9ff1907cb4e23887",
+      "locator": "Table A.4 printed p110",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are supported by the primary report text and tables.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O19",
+      "row_sha256": "d52d3a4a8dc131eb331da903b2e295dc8b229a4585036b3f621083c261d9b84e",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 4 (launcher run 20261008T090433Z-e4b9947c90b4)",
+      "review_record_sha256": "5098dd2c26a5e02980fa682d5613cd14b1e8920108ef50dcfa5c09691bea72d8",
+      "locator": "extractions/goldman2026march.txt line 1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "Claim O19 is partly supported overall because global geography is not explicitly stated in source S08.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O20",
+      "row_sha256": "9afd9b7cd3bdcf72e1ab792e7efbe10328152e7a26e341d131d5f18d2adc534b",
+      "catalogue_sha256": "0fe0af91c157524f9cd3e3c49e8c2532dcb7fd9d356eb048f68126f6da1eccba",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 4 (launcher run 20261008T090433Z-e4b9947c90b4)",
+      "review_record_sha256": "5098dd2c26a5e02980fa682d5613cd14b1e8920108ef50dcfa5c09691bea72d8",
+      "locator": "extractions/goldman2026sept.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components of claim O20 are supported by the primary transcript.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O01",
+      "row_sha256": "5ae6df2797bd7c753fa574500072a44af6967c917b433099d76e9fc146806b16",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T160138Z-9114edb6b694)",
+      "review_record_sha256": "167e999397c2ed133b7f04ae871b3cdb685ce6e059b7145e60f357bb74645006",
+      "locator": "Regional Data cell G57",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are fully supported by the retained 2025 data annex and cross-referenced 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O02",
+      "row_sha256": "aca0ba54bbf62a76ff174f94c46bec874985830f6088d7774ab284e01d846fd0",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T160138Z-9114edb6b694)",
+      "review_record_sha256": "167e999397c2ed133b7f04ae871b3cdb685ce6e059b7145e60f357bb74645006",
+      "locator": "Regional Data cell G59",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components are fully supported by the retained 2025 data annex and cross-referenced 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O03",
+      "row_sha256": "5c052aa024d949d47e3a38776c23e3b16ab8f2c1aa6407a649a6ce6adc494d02",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T160138Z-9114edb6b694)",
+      "review_record_sha256": "167e999397c2ed133b7f04ae871b3cdb685ce6e059b7145e60f357bb74645006",
+      "locator": "Table A.4 printed p110",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by Table A.4 and Annex A of the 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O04",
+      "row_sha256": "6baf31ca6fc81e163a30b338e599692bba75eae8b467db3a2afb778b86933240",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T161836Z-5f0226b1cc06)",
+      "review_record_sha256": "10285f7ba4ceff52f07b7f6b963ddfae574279812b5f9a38ec356a0453854f41",
+      "locator": "extractions/lbnl-2025-update.txt:371-372, printed page 8",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the primary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O05",
+      "row_sha256": "a62a2d4149f38019e1ae6ecb448ffc21a6799873911f6c82244edf57afd01293",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T161836Z-5f0226b1cc06)",
+      "review_record_sha256": "10285f7ba4ceff52f07b7f6b963ddfae574279812b5f9a38ec356a0453854f41",
+      "locator": "extractions/lbnl-2025-update.txt:403, printed page 9",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the primary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O06",
+      "row_sha256": "78ed29579053f7eec4b911a422c376641bf6c495892fe0e92798ced423366697",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T161836Z-5f0226b1cc06)",
+      "review_record_sha256": "10285f7ba4ceff52f07b7f6b963ddfae574279812b5f9a38ec356a0453854f41",
+      "locator": "extractions/lbnl-2025-update.txt:365-367, printed page 8",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the primary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O07",
+      "row_sha256": "37784b35680d41eeceb1c86e36793cab4232b80e43e4f48e2af485d7943b381b",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 3 of 11 (launcher run 20261008T161836Z-5f0226b1cc06)",
+      "review_record_sha256": "10285f7ba4ceff52f07b7f6b963ddfae574279812b5f9a38ec356a0453854f41",
+      "locator": "extractions/epri2026report.txt:69, PDF p2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2",
+        "qualification clause 3",
+        "qualification clause 5"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the primary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O08",
+      "row_sha256": "239f12a3277960baf8b2576685b24153956feb3a43e99ed1c846e6ed30cff20b",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 11 (launcher run 20261008T162845Z-5c6b4cb86661)",
+      "review_record_sha256": "97b495e443a2db2ca18c51bf41c5c30e507c760fd478ae4891698b669e52f2d9",
+      "locator": "extractions/mckinsey-sate-power.txt lines 77-114",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by Exhibit 1 and footnote 1 of the September 2024 McKinsey article.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O09",
+      "row_sha256": "25aa41f92931fda7d1747936a6fc387a4826b76d4ddce8b4980471b9442967e0",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 4 of 11 (launcher run 20261008T162845Z-5c6b4cb86661)",
+      "review_record_sha256": "97b495e443a2db2ca18c51bf41c5c30e507c760fd478ae4891698b669e52f2d9",
+      "locator": "extractions/mckinsey-capacity.txt lines 29-30, 143-176",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by the text and Exhibit 2 of the August 2025 McKinsey publication.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O10",
+      "row_sha256": "9c21cb810942a1c97267ce321eafd2967f71b208a98fd745fb390fdf31255178",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T163529Z-026367aef1eb)",
+      "review_record_sha256": "9e0c378038a9c881a923f1b1147651ae5e042ddc5ef66daf64b343a1da8326b7",
+      "locator": "extractions/goldman2025.txt:1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 4",
+        "qualification clause 6"
+      ],
+      "reason": "Every source-verifiable component of the claim is supported by the cited primary article.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O11",
+      "row_sha256": "6a9e3c5993c693063b0b53e9deac9b6fb6e048f7bc73483f68a42c78b9d50477",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T163529Z-026367aef1eb)",
+      "review_record_sha256": "9e0c378038a9c881a923f1b1147651ae5e042ddc5ef66daf64b343a1da8326b7",
+      "locator": "extractions/goldman2026march.txt:1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The forecast magnitude and timing are supported, but global geography is unstated in S08 and relies on an inference.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O12",
+      "row_sha256": "7f946f0ed0de45e06301c74d3b6ce479f3a2c6f7efa61d44855fde919b1c556e",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 6 of 11 (launcher run 20261008T164225Z-e46110701ecb)",
+      "review_record_sha256": "5266a328051c1098e1b8d6056c2ae6be55dece6db9193633b71a09235e930491",
+      "locator": "line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by the retained podcast transcript.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O13",
+      "row_sha256": "f7ab5511a0c89c2864a8d357460b496bf2a683ba05fece9c532c3cb4a9dc6fb5",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T164903Z-8b852a219f60)",
+      "review_record_sha256": "c4233fd661c590ccbc26c878b8d151d4b86e4302c09336ecd72a883cc1a8d68b",
+      "locator": "extractions/bnef2025.txt line 1",
+      "components_short_of_supported": [
+        "metric"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The claim is partly supported overall because S10 designates the 106 GW quantity as data-centre power demand while installed capacity is an inferred classification.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O14",
+      "row_sha256": "ea073b383721932291ddc83c05f4707441087b9ff9907e140a4cf0cbe9ea2b6f",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T164903Z-8b852a219f60)",
+      "review_record_sha256": "c4233fd661c590ccbc26c878b8d151d4b86e4302c09336ecd72a883cc1a8d68b",
+      "locator": "extractions/bnef2026.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The source supports all verifiable claim components for the 194 GW 2035 base-case projection, with maker research workflow marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O15",
+      "row_sha256": "f08f260923f2c0b225b72f4f07d467f098e9baa41bcc7aeb6107b5d3ccf55217",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 7 of 11 (launcher run 20261008T164903Z-8b852a219f60)",
+      "review_record_sha256": "c4233fd661c590ccbc26c878b8d151d4b86e4302c09336ecd72a883cc1a8d68b",
+      "locator": "extractions/bnef2026.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "The source supports all verifiable claim components for the 118 GW 2030 base-case projection, with maker research workflow marked unassessed.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O16",
+      "row_sha256": "3cf63677a79528f2b03854c4356a26903fa19cfadcf5dd902d8bc78f2f120305",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 8 of 11 (launcher run 20261008T165623Z-8c40638b5302)",
+      "review_record_sha256": "3595009b38c3fbbb286afacb0ffc53fcabbeeb30998efa442f2740a4b02a5f47",
+      "locator": "line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 3"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the public summary text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O17",
+      "row_sha256": "e0e3d3019f8eb9963c928bb28759cc16be80bc21c3d74c78168ef172fb218a16",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 9 of 11 (launcher run 20261008T170223Z-183d83fe616a)",
+      "review_record_sha256": "89ce92ced160dca86ee41aea02a3e601035756beb951006b281efa5380d07c43",
+      "locator": "extractions/deloitte-power.txt line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2"
+      ],
+      "reason": "All source-verifiable components are fully supported by S13.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O18",
+      "row_sha256": "0123bf8376bc5afd576873de9860821b2b1c4ae27cefe6c0489407462867e5f6",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 1 of 11 (launcher run 20261008T160138Z-9114edb6b694)",
+      "review_record_sha256": "167e999397c2ed133b7f04ae871b3cdb685ce6e059b7145e60f357bb74645006",
+      "locator": "Table A.4 printed p110",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components are fully supported by Table A.4 and Annex A of the 2026 report.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O19",
+      "row_sha256": "d52d3a4a8dc131eb331da903b2e295dc8b229a4585036b3f621083c261d9b84e",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "partly supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 5 of 11 (launcher run 20261008T163529Z-026367aef1eb)",
+      "review_record_sha256": "9e0c378038a9c881a923f1b1147651ae5e042ddc5ef66daf64b343a1da8326b7",
+      "locator": "extractions/goldman2026march.txt:1",
+      "components_short_of_supported": [
+        "geography"
+      ],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "The prior outlook value and horizon comparison are supported from the March 2026 summary text, but global geography is unstated and inferred.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O20",
+      "row_sha256": "9afd9b7cd3bdcf72e1ab792e7efbe10328152e7a26e341d131d5f18d2adc534b",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 6 of 11 (launcher run 20261008T164225Z-e46110701ecb)",
+      "review_record_sha256": "5266a328051c1098e1b8d6056c2ae6be55dece6db9193633b71a09235e930491",
+      "locator": "line 1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "qualification clause 2"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the retained podcast transcript.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O21",
+      "row_sha256": "046268d1f800931595fb9560e622446315cc14b6863498c2a07b2eda3d64ee6d",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T171351Z-8ab9933bbc0c)",
+      "review_record_sha256": "1e0d64a379d427dd12acac93339363c959a8bc3685c39d3a82340f5e857bbe16",
+      "locator": "extractions/s14.txt line 38",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "Every source-verifiable component of claim O21 is supported by the retained extraction.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O22",
+      "row_sha256": "8a89130d93805cb8ca52bab467e9b264c4f532e94481d378e256cd1ea9f590d6",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T171351Z-8ab9933bbc0c)",
+      "review_record_sha256": "1e0d64a379d427dd12acac93339363c959a8bc3685c39d3a82340f5e857bbe16",
+      "locator": "extractions/s15.txt line 55",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "Every source-verifiable component of claim O22 is supported by the retained extraction.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O23",
+      "row_sha256": "7cca2a110f9f23e25c0810b414fb65001be9388fec782f822bef0db435de1815",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 10 of 11 (launcher run 20261008T171351Z-8ab9933bbc0c)",
+      "review_record_sha256": "1e0d64a379d427dd12acac93339363c959a8bc3685c39d3a82340f5e857bbe16",
+      "locator": "extractions/s16.txt line 43",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "Every source-verifiable component of claim O23 is supported by the retained extraction.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O24",
+      "row_sha256": "4e1f31700d4c6e28359254183bb30f96e95c8ee6bfa04ef5cae73ca35a9c78ae",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 11 of 11 (launcher run 20261008T172448Z-b2683d8413ab)",
+      "review_record_sha256": "099b19d70f3dbae3cf29ba4261a84d65c42e63e9e8aa438c1f5a99b9f4a23a12",
+      "locator": "extractions/s17.txt line 260",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3",
+        "qualification clause 3",
+        "qualification clause 4"
+      ],
+      "reason": "Every source-verifiable component is supported by the retained press release.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O25",
+      "row_sha256": "ccb633e81abc5ffd7147abdae27f3c8d1cbb6f2540bb8d58e5fe2506507583ad",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 8 of 11 (launcher run 20261008T165623Z-8c40638b5302)",
+      "review_record_sha256": "3595009b38c3fbbb286afacb0ffc53fcabbeeb30998efa442f2740a4b02a5f47",
+      "locator": "line 1136",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 2",
+        "method_description clause 3"
+      ],
+      "reason": "All source-verifiable components of the claim are supported by the article text.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O26",
+      "row_sha256": "437b64140fd5923b9e91bc96dad3123156001375fcfadee259e57da5de40a10a",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 9 of 11 (launcher run 20261008T170223Z-183d83fe616a)",
+      "review_record_sha256": "89ce92ced160dca86ee41aea02a3e601035756beb951006b281efa5380d07c43",
+      "locator": "extractions/s20.txt line 245",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "method_description clause 4"
+      ],
+      "reason": "All source-verifiable components are fully supported by S20.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    },
+    {
+      "observation_id": "O27",
+      "row_sha256": "88c8a27a5dd426ce416a680d5212174de559f57625f1f5d368186ecf3ccbab92",
+      "catalogue_sha256": "3fd37b9103eed63d2c6a1bdaa464c1b06c23b7e4cb4404525725f78d229bf7b1",
+      "verdict": "supported",
+      "reviewer": "Google Gemini 3.8 Flash High through the Antigravity CLI, 8 October 2026, part 11 of 11 (launcher run 20261008T172448Z-b2683d8413ab)",
+      "review_record_sha256": "099b19d70f3dbae3cf29ba4261a84d65c42e63e9e8aa438c1f5a99b9f4a23a12",
+      "locator": "extractions/s17.txt line 304",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "method_description clause 3",
+        "method_description clause 4",
+        "qualification clause 3"
+      ],
+      "reason": "Every source-verifiable component is supported by the retained press release.",
+      "superseded": "bound an earlier source catalogue; kept as history, never read as current"
+    }
+  ]
+}

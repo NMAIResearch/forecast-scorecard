@@ -1,0 +1,569 @@
+{
+  "purpose": "Candidate observations registered for this version, with their sources, selection rule and search record.",
+  "version": "0.4",
+  "as_of": "2026-10-12",
+  "status": "a candidate enters arithmetic, spans and declared comparisons only with a current supported receipt in CANDIDATE_SUPPORT_REVIEW.json",
+  "selection_rule": "Registered publishers (IEA, LBNL, EPRI, McKinsey, Goldman Sachs, BloombergNEF, S&P Global with 451 Research, Deloitte and Gartner) were searched on 9 October 2026 for publications dated after the 8 October 2026 currency sweep. Two editions from other publishers were added at the author's decision of 9 October 2026: TrendForce's press release of 16 September 2026 and AEMO's 2026 data-centre forecast with Oxford Economics Australia, published in August 2026. A figure is registered only where the publisher's own retained publication states a value with a target year, unit and geography that the ledger's fields can hold; a financial-year target is recorded under the source's own year label, with the financial-year basis stated. Other values in the same publications are listed as known unregistered values. Candidates await independent claim-support receipts and enter no arithmetic until a supported receipt is bound. The sample remains a convenience sample of named institutions, not a census. Non-US addition, at the author's request of 11 October 2026, under a rule declared and recorded before the new originals were retrieved: European geographies first, from the registered publishers' European figures and from European public bodies and transmission system operators, then China; a figure only from the forecasting body's own retained publication dated 2025 or 2026 that states a value with a target year, unit and geography the ledger's fields can hold, the 2030 value where one is stated; the base, central, reference or median case, or else the case the publication presents as its headline, with its name; each publisher's own definition of the geography; a figure stated only in another organisation's publication is a lead, not registered. Settled after retrieval, because the rule left them open: a publisher's latest edition is registered and an earlier edition's figure listed as a known unregistered value, because a candidate carries no supersession; where a publication states both annual electricity and capacity for 2030, the annual electricity value is registered, as the ledger does for the IEA; a publication that names no central case but presents two retained trajectories is registered as the range across them, as the ledger records EPRI's scenario range.",
+  "search_record": [
+    {
+      "date": "2026-10-09",
+      "route": "Web search results with generated summaries, used as leads only; originals retrieved directly from the publishers' pages.",
+      "queries": [
+        "TrendForce September 2026 data center electricity power demand forecast",
+        "AEMO Oxford Economics data centre electricity consumption forecast August 2026",
+        "data center electricity demand forecast 2030 report October 8 2026 OR October 9 2026",
+        "Goldman Sachs data center power demand outlook October 2026",
+        "BloombergNEF data center power demand outlook October 2026",
+        "IEA data centre electricity October 2026 report",
+        "McKinsey data center power demand October 2026 Global Energy Perspective",
+        "Gartner data center electricity consumption press release October 2026",
+        "Deloitte data center power demand forecast October 2026",
+        "EPRI data center electricity projections October 2026",
+        "Lawrence Berkeley National Laboratory data center energy report October 2026",
+        "S&P Global 451 Research data center power demand forecast October 2026",
+        "data center electricity power demand 2030 forecast [restricted to gartner.com, iea.org, goldmansachs.com]",
+        "data center power demand forecast new October 2026 [restricted to about.bnef.com, mckinsey.com, spglobal.com]",
+        "data center electricity demand forecast new October 2026 [restricted to deloitte.com, epri.com, lbl.gov]"
+      ],
+      "outcome": "No publication dated 8 or 9 October 2026 from a registered publisher stating a qualifying figure was found. The search is bounded and is not proof that none exists; search indexes may lag the most recent days.",
+      "leads_not_registered": [
+        "McKinsey Global Energy Perspective 2026, dated in secondary coverage to early October 2026, before the search window; not retained; unverified.",
+        "A Goldman Sachs client note on US data-centre capacity for 2026 and 2027, reported in early October 2026, before the search window and outside the ledger's target years; not retained; unverified.",
+        "A BloombergNEF outlook for Europe, the Middle East and Africa, reported as published around the end of September 2026, before the search window; not retained; unverified.",
+        "An S&P Global 451 Research update of its US data-centre grid power forecast, reported as published in April 2026, before the search window; not retained; unverified."
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "route": "Web search results with generated summaries, used as leads only; the retrieval-route preflight reported limits. Originals were retrieved directly from the publishers with curl and retained with their SHA-256; the IEA's 2026 report and 2025 data annex were already retained as the ledger's S02 and S01.",
+      "queries": [
+        "European data centre electricity demand forecasts comparison review 2030 compilation",
+        "European Commission JRC data centres energy consumption EU 2030 projection report 2025",
+        "Ember report Europe data centres electricity demand grid 2025 national forecasts",
+        "systematic review data center electricity projections Europe sources traceability 2025 2026 paper",
+        "ENTSO-E data centres report 2026 electricity demand projection 2030 TWh Europe",
+        "S&P Global 451 Research Europe data center power demand 2030 TWh forecast",
+        "McKinsey European data center power demand 2030 TWh \"Europe\" AI revolution power",
+        "European Commission data centres 68 TWh 2024 114 TWh 2030 energy efficiency package rating scheme",
+        "EirGrid Generation Capacity Statement 2025 data centre demand forecast TWh 2030 Ireland",
+        "RTE Bilan prévisionnel 2025 data centres consommation électricité 2030 2035 TWh",
+        "Energinet analyseforudsætninger 2025 datacentre elforbrug 2030 TWh"
+      ],
+      "not_searched": "Other national grid operators and regulators, including those of Germany, the Netherlands, the Nordic countries other than Denmark and Great Britain; regions outside Europe beyond China; arXiv, Semantic Scholar and venue archives beyond what the web results returned.",
+      "outcome": "Four candidates added (C04 to C07) from three publishers. The search is bounded and does not establish that no other qualifying European figure exists.",
+      "leads_not_registered": [
+        "ENTSO-E, Data centres and the power system (May 2026; P06 in PRIOR_WORK.json): Figure 1 gives Europe totals of 87 TWh for 2024, 134 TWh for 2030 (minimum), 199 TWh for 2035 (minimum) and 254 TWh for 2035 (maximum), and the report's growth statement cites the IEA, the European Data Centre Association and an Accenture analysis of estimates from multiple sources. Not registered: read as a compilation of other organisations' estimates rather than ENTSO-E's own forecast, which is an inference because the figure names no source, and its 2030 value is a minimum without a stated maximum.",
+        "EirGrid and SONI, All-Island Resource Adequacy Assessment 2026-2035 (retained, SHA-256 0a3cddcf774462d0...): Table 4.2 states Ireland's data-centre and new technology load demand of 959 MVA in 2024 and 1,402, 1,870 and 2,183 MVA in 2035 in the low, median and high scenarios. Not registered: the quantity combines data centres with other new technology loads, MVA is not a unit the ledger holds, and the table gives no 2030 value.",
+        "IEA commentary of 16 November 2025, Overcoming energy constraints is key to delivering on Europe's data centre goals (retained, SHA-256 f53022869c90582e...): by IEA modelling, installed data-centre capacity in Europe grows by 70% by 2030 against 2024 and, under the policy settings current at the commentary's date, data centres account for 10% of the European Union's electricity demand growth to 2030. Not registered: an earlier IEA publication than N06, whose Table A.2 tabulates Europe's installed capacity (NK13).",
+        "S&P Global, Global data center power demand expected to almost double by 2030 (5 November 2025): automated retrieval refused twice (HTTP 403); not retained; contents unverified.",
+        "European Commission: search results attribute figures of 68 TWh in 2024 and 114 TWh in 2030 for data centres to Commission material; not retained; unverified. They equal the IEA's Europe row for those years (N06), although the IEA's Europe is wider than the European Union.",
+        "Ember, Grids for data centres in Europe (June 2025): cited in P06's reference list; by search summaries it draws on ICIS projections; not retained; unverified.",
+        "McKinsey: European data-centre power demand figures appear in search results; not retained; unverified."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "N01",
+      "title": "Global Power Demand Capacity for Data Centers Expected to Rise 31% YoY in 2026; Grid Supply Gap to Widen in 2028, Says TrendForce",
+      "publisher": "TrendForce",
+      "url": "https://www.trendforce.com/presscenter/news/20260916-13237.html",
+      "publication_date": "2026-09-16",
+      "access_date": "2026-10-09",
+      "original_sha256": "18e0e982c5fa926b51add0241a766ff7bf93ae52a293c7165d012ea016f66cdf",
+      "coverage_limit": "Press release summarising TrendForce research; the underlying report is not retained.",
+      "retained_images": [
+        {
+          "url": "https://img.trendforce.com/EDM/2026/09/20260916_135419_3.jpg",
+          "access_date": "2026-10-11",
+          "sha256": "e2d058f22ef86c0ffa6752cdf5b7672ddfb5169a49cfc63b68b9493d97b57049"
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "title": "Forecasting growing data centre demand (2026 ESOO data centre forecasting overview)",
+      "publisher": "Australian Energy Market Operator (AEMO)",
+      "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-esoo-data-centre-forecasting-overview.pdf",
+      "publication_date": "not printed; PDF metadata creation date 2026-08-25",
+      "access_date": "2026-10-09",
+      "original_sha256": "ab5defdb0e0bc5a85298c4e8f247b5d33ad53c1023e4a5d6b82d45d975032f66",
+      "coverage_limit": "Two-page AEMO explainer of the 2026 Electricity Statement of Opportunities data-centre forecast; it reports the forecast values approximately.",
+      "retrieval_note": "An automated request with a default user agent was refused (HTTP 403); a request with a generic browser user-agent string returned the PDF."
+    },
+    {
+      "id": "N03",
+      "title": "Data Centres Energy Demand Outlook in Australia",
+      "publisher": "Oxford Economics",
+      "url": "https://www.oxfordeconomics.com/resource/data-centres-energy-demand-outlook-in-australia/",
+      "publication_date": "2026-08-25",
+      "access_date": "2026-10-09",
+      "original_sha256": "89ed20f491c4879f37364428d5b09c8ecb1ea72f5a7571b70d098016575edb5a",
+      "coverage_limit": "Summary page of the joint forecast report; the full report is not retained."
+    },
+    {
+      "id": "N04",
+      "title": "By 2028, US Data Centers Could Have the Servers but Not the Power to Run Them",
+      "publisher": "TrendForce",
+      "url": "https://insights.trendforce.com/p/us-data-center-power-gap",
+      "publication_date": "2026-09-22",
+      "access_date": "2026-10-09",
+      "original_sha256": "c4a1b588c5ec12925dd4da508a75695c3da38e7585ff461405303a5f91ffb929",
+      "coverage_limit": "TrendForce analysis article; used for method wording and one unregistered US value.",
+      "retained_images": [
+        {
+          "url": "https://substack-post-media.s3.amazonaws.com/public/images/a769f65c-db84-4b4e-a76d-1fe9cee0ca6a_1080x560.jpeg",
+          "access_date": "2026-10-11",
+          "sha256": "821b962b595e5fdb04be3a1aecd30e5f49ea604aaf30b670f468af13944132a7"
+        },
+        {
+          "url": "https://substack-post-media.s3.amazonaws.com/public/images/8d27ea91-ecc1-4537-8f0e-ff036733f78c_1920x1080.png",
+          "access_date": "2026-10-11",
+          "sha256": "04799f9b45b5c3305a1b2e2121ab06a42ec8f8e55faa2d41f67e1a097c404313"
+        },
+        {
+          "url": "https://substack-post-media.s3.amazonaws.com/public/images/c36eedde-3466-46c4-b32b-7dda0b52974a_1920x1080.png",
+          "access_date": "2026-10-11",
+          "sha256": "65c1f8a6a4b2eb51a3d1c64dc5e1ec32c7f2433124823501ba6aee4fb650f30b"
+        },
+        {
+          "url": "https://substack-post-media.s3.amazonaws.com/public/images/875c2710-6c04-400c-b6e6-960a017aa587_1920x1080.png",
+          "access_date": "2026-10-11",
+          "sha256": "76c69cc40ce87332ae2efd9ff7046f898be7ca2c158eaa64cffeb8608880bd60"
+        },
+        {
+          "url": "https://substack-post-media.s3.amazonaws.com/public/images/726b4092-d4e3-471a-b50b-03df9264aa3b_1920x1080.png",
+          "access_date": "2026-10-11",
+          "sha256": "483334eae215720900bdac87bee77e0601b904736351de0d6e52d4a4fdaa46d2"
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "title": "North American AI Data Center Expansion Drives 2026 CapEx of Top Nine CSPs to US$830 Billion, Says TrendForce",
+      "publisher": "TrendForce",
+      "url": "https://www.trendforce.com/presscenter/news/20260506-13033.html",
+      "publication_date": "2026-05-06",
+      "access_date": "2026-10-09",
+      "original_sha256": "2220ce67b581c697e4ce7f23993be3adc808067bc8bc60a2c4a7bf8b4f0f40d2",
+      "coverage_limit": "Earlier TrendForce release; used only to check for an earlier TrendForce 2030 figure, and none occurs in its retained text or its retained article image.",
+      "retained_images": [
+        {
+          "url": "https://img.trendforce.com/EDM/2026/05/20260506_160821_3.jpg",
+          "access_date": "2026-10-11",
+          "sha256": "f2ea75edcfb3cdefa40a6407cda5f4e23e82f04758ddd879f781d707eadcb9a4"
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "title": "Key Questions on Energy and AI, World Energy Outlook Special Report (2026)",
+      "publisher": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+      "publication_date": "2026-04-16 (date on the IEA's report page; the colophon reads Typeset in France by IEA - April 2026)",
+      "access_date": "2026-10-07",
+      "original_sha256": "a3a47f07b35420e74b243878f631192b04788110db3c75275feb0fbdee7f4858",
+      "retained_pages": [
+        {
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+          "access_date": "2026-10-07",
+          "sha256": "a3fc3a0c26967c2471d70e242594e2c4eca331aead091eaa765e570864462d66"
+        }
+      ],
+      "coverage_limit": "Tabulated Base Case values by region (Tables A.2 and A.4) and the regional definitions (Annex B) are used; the same retained original is the ledger's S02.",
+      "retrieval_note": "The PDF was retrieved from the IEA's asset store on 7 October 2026."
+    },
+    {
+      "id": "N07",
+      "title": "IEA Energy and AI data annex, 2025",
+      "publisher": "International Energy Agency (IEA)",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "publication_date": "2025 edition (source title; not stated in sheet cells)",
+      "access_date": "2026-10-07",
+      "original_sha256": "62a70368a227b913d8f7698c5b7947f73889c8f447acc536dd774edd712419d3",
+      "coverage_limit": "Stored values of the Regional Data sheet's Europe and China rows are read; formulas are not evaluated. The same retained original is the ledger's S01; used for the earlier edition's values only. No retrieval record for this file is held: its access date, taken from the ledger's S01 entry, and its link to the publication page are unverified."
+    },
+    {
+      "id": "N08",
+      "title": "Bilan prévisionnel 2025-2035, chapter 2: La consommation d'électricité",
+      "publisher": "RTE (Réseau de transport d'électricité)",
+      "url": "https://assets.rte-france.com/prod/public/2025-12/2025-12-23-bilan-previsionnel-2025-consommation.pdf",
+      "publication_date": "not printed; the URL path and file name carry 2025-12-23, and the PDF's metadata modification date is 23 December 2025",
+      "access_date": "2026-10-11",
+      "original_sha256": "db2f6c0c78c7a70e6fda626fcb379ea0169b08b6e6c3c9bb546c347bb333f78a",
+      "coverage_limit": "One chapter of the Bilan prévisionnel; the other chapters are not retained. The 2030 values are read from the data labels of Figure 2.10."
+    },
+    {
+      "id": "N09",
+      "title": "Analyseforudsætninger til Energinet 2025 – Datacentre, baggrundsnotat",
+      "publisher": "Danish Energy Agency (Energistyrelsen)",
+      "url": "https://ens.dk/media/7603/download",
+      "publication_date": "2025-11 (printed month); PDF metadata creation date 2025-12-03",
+      "access_date": "2026-10-11",
+      "original_sha256": "007eb5918d7dfdf3f70451ba8b992b811470b013d43af2c1f4acfebbcd5777bb",
+      "coverage_limit": "The background note on data centres only; the other AF25 notes are not retained. Text in Danish; values quoted as printed, with decimal commas."
+    }
+  ],
+  "records": [
+    {
+      "id": "C01",
+      "forecaster": "TrendForce",
+      "forecast_vintage": "2026-09-16 (press release date)",
+      "source_publication": "2026-09-16",
+      "geography": "Global",
+      "horizon": 2030,
+      "unit": "GW",
+      "metric": "data_centre_capacity_demand",
+      "scenario": "unstated",
+      "shape": "point",
+      "value_basis": "text_value",
+      "low": 490.7,
+      "high": 490.7,
+      "point": 490.7,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "total_facility_IT_plus_overhead",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N01",
+      "locator": "Press release of 16 September 2026, section on the 2030 global supply-demand capacity gap, second paragraph, first sentence",
+      "qualification": "N01 states the registered value as global data-centre power demand capacity projected for 2030 and divides demand capacity into general servers, AI servers, other IT equipment and non-IT equipment such as cooling and power supply systems, so the boundary includes facility overhead. N01's retained text and its retained article image name no scenario and no data-centre types and do not mention cryptocurrency. TrendForce's 22 September 2026 article (N04) describes the demand line as fleet electricity use converted into power capacity; a note on one of its charts states that TrendForce's line uses a conversion consistent with IEA public data and that LBNL equates its 2030 Reference Case to 148 GW of interconnection capacity at 50% utilisation, and N04's retained text and article images give no number for TrendForce's conversion. No 2030 figure occurs in the retained text or retained article image of TrendForce's earlier release N05, so no earlier TrendForce vintage of this quantity is registered. Other values in N01 are listed as NK01, NK02 and NK10. The underlying report is not retained.",
+      "method_description": "AI server industry research (N01); demand capacity grouped by equipment type, with the non-IT category labelled PUE-derived in the release's chart (N01); shipment estimates accumulated into the fleet in service, whose annual electricity use is converted into power capacity on a basis N04 describes as consistent with IEA public data, with no number given (N04); published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C02",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "forecast_vintage": "2026 forecast update (2026 Electricity Statement of Opportunities)",
+      "source_publication": "2026-08-25",
+      "geography": "Australia (National Electricity Market)",
+      "horizon": 2030,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "Step Change",
+      "shape": "point",
+      "value_basis": "text_value",
+      "low": 15.5,
+      "high": 15.5,
+      "point": 15.5,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "data_centres_unspecified",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N03",
+      "locator": "Page of 25 August 2026, summary paragraph on the Step Change scenario, FY30 value",
+      "qualification": "N03 presents Oxford Economics Australia's and AEMO's joint forecast. The target is labelled FY30, a financial year rather than a calendar year; neither N02 nor N03 states the months of the financial year. The value is for the National Electricity Market, which N02 describes as supplying eastern and south-eastern Australia; the national value is listed as NK05. AEMO's own overview (N02) reports the same value approximately and states it as a share of forecast operational consumption (NK09), and describes Step Change as its most likely scenario (printed 'mostly likely'). Neither page states a facility boundary or mentions cryptocurrency. Other scenarios are listed as NK07 and the stated revision from the 2025 forecast as NK08.",
+      "method_description": "Joint forecast combining a project approach with probabilistic weighting of prospective projects and an economic approach with a logistic electricity-intensity curve and an international demand component (N03); N02 describes project-level information from developers and network service providers combined with an economic outlook; published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C03",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "forecast_vintage": "2026 forecast update (2026 Electricity Statement of Opportunities)",
+      "source_publication": "2026-08-25",
+      "geography": "Australia (National Electricity Market)",
+      "horizon": 2036,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "Step Change",
+      "shape": "point",
+      "value_basis": "text_value",
+      "low": 33.7,
+      "high": 33.7,
+      "point": 33.7,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "data_centres_unspecified",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N03",
+      "locator": "Page of 25 August 2026, summary paragraph on the Step Change scenario, FY36 value",
+      "qualification": "N03 presents Oxford Economics Australia's and AEMO's joint forecast. The target is labelled FY36, a financial year rather than a calendar year; neither N02 nor N03 states the months of the financial year. The value is for the National Electricity Market, which N02 describes as supplying eastern and south-eastern Australia; the national value is listed as NK05. AEMO's own overview (N02) reports the same value approximately and states it as a share of forecast operational consumption (NK09), and describes Step Change as its most likely scenario (printed 'mostly likely'). Neither page states a facility boundary or mentions cryptocurrency. Other scenarios are listed as NK07 and the stated revision from the 2025 forecast as NK08.",
+      "method_description": "Joint forecast combining a project approach with probabilistic weighting of prospective projects and an economic approach with a logistic electricity-intensity curve and an international demand component (N03); N02 describes project-level information from developers and network service providers combined with an economic outlook; published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C04",
+      "forecaster": "IEA",
+      "forecast_vintage": "2026-04-16 (publication date on the IEA's report page)",
+      "source_publication": "2026-04-16 (publication date on the IEA's report page)",
+      "geography": "Europe (IEA region)",
+      "horizon": 2030,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "Base Case",
+      "shape": "point",
+      "value_basis": "table_value",
+      "low": 114,
+      "high": 114,
+      "point": 114,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "total_facility_IT_plus_overhead",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N06",
+      "locator": "Table A.4 printed p110 (Europe, total electricity consumption, 2030, Base Case); Annex B printed p122 (definition of Europe)",
+      "qualification": "Europe row of Table A.4: total, as distinct from IT-only, consumption. Annex B defines the IEA's Europe as the European Union regional grouping and Albania, Belarus, Bosnia and Herzegovina, Gibraltar, Iceland, Israel, Kosovo, Montenegro, North Macedonia, Norway, the Republic of Moldova, Serbia, Switzerland, Türkiye, Ukraine and the United Kingdom, so it is wider than the European Union and is not assumed to match another publisher's Europe. Annex A obtains each region's total by multiplying IT demand by a PUE for each data-centre type. The workbook retained as the IEA's 2025 data annex (N07, whose retrieval record is not held) gives 113 TWh for the same row and year (NK15); only the latest edition is registered, and a one-unit difference between tabulated values is not interpreted as a substantive revision. Other values in N06 are listed as NK11 to NK14. N06 does not state whether its values include cryptocurrency mining. Model projection, not a measured outcome.",
+      "method_description": "Bottom-up model driven by IT equipment shipments, covering servers, storage systems and network equipment inside facilities and excluding data transmission networks; global installed IT capacity allocated to regions mainly from a third-party provider's (IDC's) regional breakdown; total demand obtained by multiplying IT demand by a PUE for each region and data-centre type (Annex A methodology); published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C05",
+      "forecaster": "IEA",
+      "forecast_vintage": "2026-04-16 (publication date on the IEA's report page)",
+      "source_publication": "2026-04-16 (publication date on the IEA's report page)",
+      "geography": "China (IEA region, including Hong Kong)",
+      "horizon": 2030,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "Base Case",
+      "shape": "point",
+      "value_basis": "table_value",
+      "low": 277,
+      "high": 277,
+      "point": 277,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "total_facility_IT_plus_overhead",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N06",
+      "locator": "Table A.4 printed p110 (China, total electricity consumption, 2030, Base Case); Annex B printed p121 (definition of China)",
+      "qualification": "China row of Table A.4, beneath Asia Pacific: total, as distinct from IT-only, consumption. Annex B states that China includes the People's Republic of China and Hong Kong, China. Annex A obtains each region's total by multiplying IT demand by a PUE for each data-centre type. The workbook retained as the IEA's 2025 data annex (N07, whose retrieval record is not held) gives 277 TWh for the same row and year (NK15); only the latest edition is registered. Other values in N06 are listed as NK11 to NK14. N06 does not state whether its values include cryptocurrency mining. Model projection, not a measured outcome.",
+      "method_description": "Bottom-up model driven by IT equipment shipments, covering servers, storage systems and network equipment inside facilities and excluding data transmission networks; global installed IT capacity allocated to regions mainly from a third-party provider's (IDC's) regional breakdown; total demand obtained by multiplying IT demand by a PUE for each region and data-centre type (Annex A methodology); published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C06",
+      "forecaster": "RTE (Réseau de transport d'électricité)",
+      "forecast_vintage": "Bilan prévisionnel 2025-2035",
+      "source_publication": "not verified (the URL path and file name carry 2025-12-23 and the PDF's metadata modification date is 23 December 2025)",
+      "geography": "France",
+      "horizon": 2030,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "décarbonation lente to décarbonation rapide (the two trajectories RTE retained after public consultation)",
+      "shape": "scenario_range",
+      "value_basis": "chart_value",
+      "low": 10,
+      "high": 15,
+      "point": null,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "data_centres_unspecified",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N08",
+      "locator": "Chapter 2, section 2.5.3 and Figure 2.10 (PDF page 28), data labels at 2030",
+      "qualification": "Electricity consumption of data centres on dedicated sites ('centres de données sur sites dédiés'), a category N08 introduces for the first time, as opposed to in-house data centres in the premises of the organisation that uses them; the 2023 edition counted both (footnote 14). The projections are calibrated to include dedicated-site data centres connected to the distribution network. The values are the 2030 data labels of Figure 2.10: 15 TWh on the line of the décarbonation rapide trajectory and 10 TWh on that of the décarbonation lente trajectory, paired by the colour of label and line; the section's prose states the two trajectories' 2035 levels (NK16) and, outside Figure 2.10, no 2030 level. RTE names no central case: it studies three deliberately contrasting trajectories, décarbonation rapide, built as an update of the 2023 edition's A - référence scenario, décarbonation lente, and a stagnation trajectory studied as a sensitivity test, which for data centres assumes very slow growth to 2030 without a stated value; for data centres it retained the first two after public consultation, and the range spans them. N08's national consumption series are for mainland metropolitan France (Figure 2.1); the data-centre section does not restate its perimeter. N08 does not mention cryptocurrency or state whether the consumption is IT load or includes cooling and other overhead. Other values are listed as NK16 to NK18.",
+      "method_description": "Trajectories built from the power of data-centre projects with a signed connection offer, aggregated by planned connection year, with assumed concretisation rates, a ramp-up of the order of ten years and the maximum power reached: in the décarbonation rapide trajectory, about 60% concretisation (4.3 GW) of transmission-connected projects due before 2030, an average utilisation of 20% of connection capacity at that horizon and about 2.4 TWh of growth from distribution-connected sites; in the décarbonation lente trajectory, about 30% concretisation and about 1.8 TWh of distribution growth (N08 sections 2.5.2 and 2.5.3); published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    },
+    {
+      "id": "C07",
+      "forecaster": "Danish Energy Agency (Energistyrelsen)",
+      "forecast_vintage": "AF25 (Analyseforudsætninger til Energinet 2025)",
+      "source_publication": "2025-11 (printed month)",
+      "geography": "Denmark",
+      "horizon": 2030,
+      "unit": "TWh",
+      "metric": "annual_electricity",
+      "scenario": "AF25 base course (grundforløb), a target-fulfilment scenario",
+      "shape": "point",
+      "value_basis": "text_value",
+      "low": 6.0,
+      "high": 6.0,
+      "point": 6.0,
+      "base_year": null,
+      "crypto_scope": "unstated",
+      "coverage": "data_centres_unspecified",
+      "state": "added",
+      "comparison_family": "",
+      "superseded_by": "",
+      "source_id": "N09",
+      "locator": "Background note on data centres, section 1.1, page 3 of 9, sentence after the capacity-utilisation assumptions",
+      "qualification": "N09 states that data-centre electricity consumption is assumed to be 6.0 TWh in 2030 ('6,0 TWh i 2030'), from installed capacity for the whole of Denmark assumed at 1,000 MW in 2030 and capacity utilisation that starts at 60% in a data centre's first year of operation and rises to 80% in its fifteenth. AF25 is a target-fulfilment scenario: its base course is in principle compatible with meeting the political climate and energy targets, though not all of them are directly reflected. The included data centres range from about 1 MW to hyperscale sites of 150 MW or more. N09 states that AF25 has markedly lower consumption than AF24 in the short term and higher consumption in the long term. N09 does not mention cryptocurrency or state a facility boundary such as IT load or cooling; its one mention of cooling concerns the Danish climate. Other values are listed as NK19 and NK20.",
+      "method_description": "Projection of data-centre capacity and consumption from Energinet's knowledge of coming data centres, with all installed capacity phased in over ten years, projects in screening weighted at 40% (50% in AF24), capacity growth of just under 2% a year after 2045 and capacity utilisation rising from 60% to 80% over a data centre's first 15 years (N09 sections 1.1 and 1.2 and the list of changes from AF24); published outputs read; model not rebuilt.",
+      "model_reproduction": "not_attempted",
+      "maker_assessment": "supported"
+    }
+  ],
+  "horizon_basis": {
+    "C02": "FY30, a financial year as labelled by the source",
+    "C03": "FY36, a financial year as labelled by the source"
+  },
+  "auxiliary_sources": {
+    "C01": [
+      "N04",
+      "N05"
+    ],
+    "C02": [
+      "N02"
+    ],
+    "C03": [
+      "N02"
+    ],
+    "C04": [
+      "N07"
+    ],
+    "C05": [
+      "N07"
+    ]
+  },
+  "known_unregistered": [
+    {
+      "id": "NK01",
+      "forecaster": "TrendForce",
+      "source_id": "N01",
+      "locator": "Second paragraph of the release body",
+      "description": "Global data-centre power demand capacity of 122.9 GW in 2025 and an estimated 161 GW in 2026; not registered because the ledger registers no 2025 to 2027 horizon."
+    },
+    {
+      "id": "NK02",
+      "forecaster": "TrendForce",
+      "source_id": "N01",
+      "locator": "Section on the 2030 global supply-demand capacity gap",
+      "description": "A 2030 grid capacity available to data centres of 222.6 GW, assuming all other electricity demand is fully met, and a supply-demand gap of 268 GW; the gap excludes behind-the-meter on-site generation, so the headline gap may be larger than the actual shortage; supply-side figures, not a demand forecast; not registered."
+    },
+    {
+      "id": "NK03",
+      "forecaster": "TrendForce",
+      "source_id": "N04",
+      "locator": "Article of 22 September 2026, United States section",
+      "description": "US shipment-implied demand of 272.4 GW in 2030, which the article derives by allocating TrendForce's global total in proportion to public agencies' regional demand forecasts; a separate article outside the edition named for this version; not registered, by the author's decision of 9 October 2026."
+    },
+    {
+      "id": "NK04",
+      "forecaster": "TrendForce",
+      "source_id": "N05",
+      "locator": "Release of 6 May 2026, data-centre growth paragraph",
+      "description": "Total installed power capacity of approximately 155 GW in 2026; no 2030 figure occurs in the release's retained text or its retained article image; a 2026 horizon, not registered."
+    },
+    {
+      "id": "NK05",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "source_id": "N03",
+      "locator": "Summary paragraph on the Step Change scenario",
+      "description": "National values for the Step Change scenario of 15.8 TWh by FY30 and 34.3 TWh by FY36; a wider geography than the registered NEM values; not registered."
+    },
+    {
+      "id": "NK06",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "source_id": "N03",
+      "locator": "Summary paragraph on the Step Change scenario",
+      "description": "Consumption of 5.1 TWh in FY26 in the NEM (5.2 TWh nationally); a current-year estimate, not registered."
+    },
+    {
+      "id": "NK07",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "source_id": "N03",
+      "locator": "Paragraphs on the Accelerated Transition and Slower Growth scenarios",
+      "description": "Accelerated Transition: 20.1 TWh by FY30 and 52.5 TWh by FY36 in the NEM. Slower Growth: 10.5 TWh by FY30 and 15.1 TWh by FY36 in the NEM. Other scenarios, not registered."
+    },
+    {
+      "id": "NK08",
+      "forecaster": "AEMO with Oxford Economics Australia",
+      "source_id": "N03",
+      "locator": "Paragraph on the upgrade from the 2025 forecasts",
+      "description": "Step Change energy demand stated as 31% higher by FY30 and 47% higher by FY36 than in the 2025 forecasts. Each percentage takes the 2026 forecast minus the 2025 forecast for the same year as numerator and the 2025 forecast as denominator; the 2025 values are not stated on the page. N=1 publisher series; not registered."
+    },
+    {
+      "id": "NK09",
+      "forecaster": "AEMO",
+      "source_id": "N02",
+      "locator": "Step Change paragraph beside the forecast chart",
+      "description": "AEMO's overview reports the Step Change values approximately, as around 15 TWh by FY30 and around 34 TWh by FY36 and states them as 7.8% and 13% of forecast NEM operational consumption (numerator: data-centre consumption; denominator: forecast NEM operational consumption; N=1 forecast series); not registered."
+    },
+    {
+      "id": "NK10",
+      "forecaster": "TrendForce",
+      "source_id": "N01",
+      "locator": "Chart in the release body, after its final paragraph (retained article image)",
+      "description": "The chart gives global data-centre power demand capacity of 100.5 GW for 2024, 122.9 GW for 2025, 161.0 GW for 2026 (labelled 2026F) and 211.1 GW for 2027 (labelled 2027F); the 2025 and 2026 values repeat NK01. Not registered: the 2024 value is for a year before the release, not a forecast target, and the ledger registers no 2025 to 2027 horizon."
+    },
+    {
+      "id": "NK11",
+      "forecaster": "IEA",
+      "source_id": "N06",
+      "locator": "Table A.4 printed p110, IT electricity consumption rows",
+      "description": "IT electricity consumption in 2030 (Base Case) of 88 TWh for Europe and 205 TWh for China; an IT-only boundary, narrower than the registered totals C04 and C05; not registered."
+    },
+    {
+      "id": "NK12",
+      "forecaster": "IEA",
+      "source_id": "N06",
+      "locator": "Table A.4 printed p110, Europe and China rows",
+      "description": "Total electricity consumption of 66, 68 and 72 TWh for Europe and 84, 102 and 117 TWh for China in 2023, 2024 and 2025; years up to the report's own, not registered."
+    },
+    {
+      "id": "NK13",
+      "forecaster": "IEA",
+      "source_id": "N06",
+      "locator": "Table A.2 printed p109, Europe and China rows",
+      "description": "Installed capacity in 2030 (Base Case) of 27 GW for Europe and 67 GW for China in total, and IT installed capacity of 21 GW and 49 GW; capacity from the publication whose annual electricity values are registered as C04 and C05; not registered."
+    },
+    {
+      "id": "NK14",
+      "forecaster": "IEA",
+      "source_id": "N06",
+      "locator": "Table A.4 printed p110, other regional rows",
+      "description": "Totals for 2030 (Base Case) of 2.7 TWh for Central and South America, 2.9 TWh for Africa, 3.0 TWh for the Middle East, 378 TWh for Asia Pacific and 434 TWh for North America, whose United States row (426 TWh) the ledger registers from the same table as O18; not registered: the non-US selection rule limits regions outside Europe to China."
+    },
+    {
+      "id": "NK15",
+      "forecaster": "IEA",
+      "source_id": "N07",
+      "locator": "Regional Data, G61 and G65; G54 identifies the Base Case and G55 the year 2030",
+      "description": "The Base Case totals for 2030 in the workbook retained as the IEA's 2025 data annex, whose retrieval record is not held: 113 TWh for Europe (G61) and 277 TWh for China (G65); the earlier IEA edition of the quantities registered as C04 and C05, listed rather than registered because a candidate carries no supersession."
+    },
+    {
+      "id": "NK16",
+      "forecaster": "RTE",
+      "source_id": "N08",
+      "locator": "Section 2.5.3 and Figure 2.10, 2035",
+      "description": "Dedicated-site data-centre demand of nearly 32 TWh in 2035 in the décarbonation rapide trajectory and 21 TWh in the décarbonation lente trajectory; a 2035 horizon, not registered because the non-US rule registers the 2030 value."
+    },
+    {
+      "id": "NK17",
+      "forecaster": "RTE",
+      "source_id": "N08",
+      "locator": "Section 2.5.2, current consumption",
+      "description": "Consumption in 2024 estimated at under 1 TWh for transmission-connected data centres alone, of the order of 4 to 5 TWh for all dedicated-site data centres and between 5 and 10 TWh including in-house data centres; estimates for a past year, not registered."
+    },
+    {
+      "id": "NK18",
+      "forecaster": "RTE",
+      "source_id": "N08",
+      "locator": "Section 2.5.3 and footnote 14",
+      "description": "The 2023 edition's A - référence scenario: a rise of the order of 10 TWh by 2030 and 20 TWh by 2035, for a sector that then also counted in-house data centres; a stated increase from an earlier edition, not a level, not registered."
+    },
+    {
+      "id": "NK19",
+      "forecaster": "Danish Energy Agency",
+      "source_id": "N09",
+      "locator": "Section 1.1, page 3 of 9",
+      "description": "Data-centre electricity consumption of 26.8 TWh in 2040 and 35.9 TWh in 2050 (AF25); later horizons, not registered."
+    },
+    {
+      "id": "NK20",
+      "forecaster": "Danish Energy Agency",
+      "source_id": "N09",
+      "locator": "Section 1.1, page 3 of 9",
+      "description": "Installed data-centre capacity assumed at 1,000 MW in 2030, 4,100 MW in 2040 and 5,250 MW in 2050 (AF25); capacity from the publication whose annual electricity value is registered as C07; not registered."
+    }
+  ]
+}

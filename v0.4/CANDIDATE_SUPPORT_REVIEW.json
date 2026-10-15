@@ -1,0 +1,145 @@
+{
+  "purpose": "Independent claim-support verdicts for the candidate observations in CANDIDATE_OBSERVATIONS.json, each bound to the digest of one candidate row and of the candidate source list.",
+  "digest_method": "SHA-256 of compact sort-keyed UTF-8 JSON, as for SUPPORT_REVIEW.json. row_sha256 covers the candidate row without maker_assessment; candidate_source_list_sha256 covers every source record in CANDIDATE_OBSERVATIONS.json in identifier order, so a change to any candidate source record, including auxiliary evidence, makes every candidate receipt stale. Stale receipts confer nothing.",
+  "admission_rule": "A candidate whose current row and candidate source list carry a supported receipt enters arithmetic, recorded-value spans, the like-for-like comparison and declared comparisons under the rules that apply to a registered observation. A missing or stale receipt, or a verdict short of supported, admits nothing, and the candidate stays listed with its status. A malformed receipt, a receipt naming an unknown candidate or a second current receipt for one candidate fails the reproduction check.",
+  "history": "historical_reviews keeps receipts that bound an earlier candidate row or source list; they never count as current.",
+  "receipt_fields": {
+    "candidate_id": "The candidate's identifier in CANDIDATE_OBSERVATIONS.json.",
+    "row_sha256": "Digest of the reviewed candidate row without maker_assessment.",
+    "candidate_source_list_sha256": "Digest of the reviewed candidate source list.",
+    "verdict": "supported, partly supported, not supported, contradicted or unassessed.",
+    "reviewer": "The reviewing model, harness, date and run.",
+    "review_record_sha256": "SHA-256 of the reviewer's sealed verdict file.",
+    "locator": "Locator of the decisive evidence.",
+    "components_short_of_supported": "Claim components rated below supported; empty for a supported verdict.",
+    "components_unassessed_as_maker_conduct": "Components describing the makers' own conduct, which the reviewer marked unassessed.",
+    "reason": "The reviewer's reason for the verdict."
+  },
+  "reviews": [
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C01; changes/CHANGES.json: rows_unchanged and sources; row_sha256=42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C01 overall finding. The unchanged row relies on N01, N04 and N05. Changes to N06's date/report page and N07's provenance limit do not bear on it. Preserve B4's limitation that the underlying TrendForce report is absent."
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C02; changes/CHANGES.json: rows_unchanged and sources; row_sha256=fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C02 overall finding. The unchanged row relies on N03 and N02, so neither source-list change bears on it. The NEM financial-year scope, approximate auxiliary figure and unspecified facility/cryptocurrency boundaries remain qualified; the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C03; changes/CHANGES.json: rows_unchanged and sources; row_sha256=ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C03 overall finding. The unchanged row relies on N03 and N02, so neither source-list change bears on it. The later NEM financial-year horizon and method limitations remain unchanged; the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C04",
+      "row_sha256": "e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N06-P1 extraction.txt:137-144,207; N06 Table A.4 p110 and Annex B p122; N07 Regional Data!G61; B4 claims I02,I07,I10-I12,I20; row_sha256=e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Newly assessed: both date fields are supported by I13/N06-P1; the qualification now limits the earlier-edition comparison to the retained workbook and discloses its missing retrieval record. Reused B4 I02 (114 TWh, 2030, Base Case), I07 (Europe perimeter), I10-I12 (regional allocation, PUE and unspecified cryptocurrency boundary), I20 (earlier workbook values), and the unchanged supported components of C04 overall. I09 is newly supported after repair. N07's access date/publication linkage remain unverified. The stale SOURCE_INDEX N06 date requires correction but does not contradict the primary page supporting this row."
+    },
+    {
+      "candidate_id": "C05",
+      "row_sha256": "229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N06-P1 extraction.txt:137-144,207; N06 Table A.4 p110 and Annex B p121; N07 Regional Data!G65; B4 claims I03,I08,I10-I12,I20; row_sha256=229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Newly assessed: both date fields are supported by I13/N06-P1; the qualification now limits the earlier-edition comparison to the retained workbook and discloses its missing retrieval record. Reused B4 I03 (277 TWh, 2030, Base Case), I08 (China including Hong Kong), I10-I12 (regional allocation, PUE and unspecified cryptocurrency boundary), I20 (earlier workbook values), and the unchanged supported components of C05 overall. I09 is newly supported after repair. N07's access date/publication linkage remain unverified. The stale SOURCE_INDEX N06 date requires correction but does not contradict the primary page supporting this row."
+    },
+    {
+      "candidate_id": "C06",
+      "row_sha256": "84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N08 extraction.txt:1397-1560; N08-R1 page-28.png, Figure 2.10; N08 PDF metadata and SOURCE_INDEX URL; B4 claims R01-R16,R18; row_sha256=84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Supported as the qualified row is written: source_publication explicitly remains unverified, while the URL/file-name date and PDF modification date are correctly distinguished. The repaired qualification confines the absence of 2030 levels to prose outside Figure 2.10. Reused B4 R01-R16 and R18 for report identity, dedicated-site boundary, geography qualification, scenario endpoints, methods and bounded absences; R17 was reassessed and the chart inspected. This verdict does not establish a publication date or a more precise forecast-production date."
+    },
+    {
+      "candidate_id": "C07",
+      "row_sha256": "32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C07; changes/CHANGES.json: rows_unchanged and sources; row_sha256=32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C07 overall finding. The unchanged row relies on N09, so changes to N06 and N07 do not bear on it. The Danish scope, base-course qualification and unspecified facility boundary remain as reviewed."
+    }
+  ],
+  "historical_reviews": [
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C01; N01:121-129; N01-I1; N04:27-30 and N04-I3 note; N05:118-128 and N05-I1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The global 2030 value, GW capacity metric, facility-overhead boundary, source date, equipment and shipment methodology, and bounded qualifications are supported. No numeric TrendForce conversion is supplied. Earlier-release absence is properly confined to N05. Row SHA-256 42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C02; N03:226,229-243; N02 pp.1-2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The joint attribution, Step Change NEM value of 15.5 TWh by FY30, source date and method description agree. The financial-year basis, unknown months, unspecified facility and cryptocurrency boundaries, and distinction from national values are preserved. Row SHA-256 fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C03; N03:226,229-243; N02 pp.1-2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The joint attribution, Step Change NEM value of 33.7 TWh by FY36, source date and method description agree. The financial-year basis, unknown months, unspecified facility and cryptocurrency boundaries, and distinction from national values are preserved. Row SHA-256 ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    }
+  ]
+}

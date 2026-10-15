@@ -1,0 +1,247 @@
+{
+  "purpose": "Public source references and coverage limits; raw third-party originals stay outside the bundle.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "IEA Energy and AI data annex, 2025",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "source_type": "primary_table",
+      "locator": "Regional Data, G57 and G59; G55 identifies 2030",
+      "access_date": "2026-10-07",
+      "original_sha256": "62a70368a227b913d8f7698c5b7947f73889c8f447acc536dd774edd712419d3",
+      "coverage_limit": "Published output cells inspected through a stored-value extraction. No forecast-model reconstruction. The edition is identified by the source title; the sheet cells carry no date.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S02",
+      "title": "IEA Key Questions on Energy and AI, 2026",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+      "source_type": "primary",
+      "locator": "Executive summary printed p10; section 1.4 printed p24; Table A.1 printed p108; Table A.4 printed p110; Annex A methodology section",
+      "access_date": "2026-10-07",
+      "original_sha256": "a3a47f07b35420e74b243878f631192b04788110db3c75275feb0fbdee7f4858",
+      "coverage_limit": "Tabulated Base Case values are registered; the report text rounds them. The colophon gives April 2026; release day not verified. Annex A documents the model boundary.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S03",
+      "title": "LBNL United States Data Center Energy Usage Report 2025 Update",
+      "url": "https://doi.org/10.71468/P1RP4F",
+      "source_type": "primary",
+      "locator": "Total Energy Use, printed page 8; Table 2; section 3.1, printed page 13; accelerator scenarios, printed page 15",
+      "access_date": "2026-10-07",
+      "original_sha256": "94e29b48245ec7ba234d8aff892315d4e4f11e49cc94e363d68871759015c02e",
+      "coverage_limit": "Modelled historical estimates and scenarios; cryptocurrency excluded. Raw commercial input series and full model reproduction not tested.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S04",
+      "title": "EPRI Powering Intelligence 2026 research brief",
+      "url": "https://restservice.epri.com/publicattachment/97025",
+      "source_type": "primary",
+      "locator": "PDF p2 annual-energy paragraph; PDF p3 Figure 2 caption",
+      "access_date": "2026-10-07",
+      "original_sha256": "09ac5ed9ddd4b656b1aa04557fa8c462fe8fe80c3b64c98f8b959baead2aab49",
+      "coverage_limit": "Scenario range includes cryptocurrency (Figure 2 caption). Brief read; the cited white paper is not retained and the complete model was not rebuilt.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S05",
+      "title": "McKinsey How data centers and the energy sector can sate AI hunger for power",
+      "url": "https://www.mckinsey.com/industries/private-capital/our-insights/how-data-centers-and-the-energy-sector-can-sate-ais-hunger-for-power",
+      "source_type": "primary",
+      "locator": "Exhibit 1, US data-centre demand, medium scenario, 2030 column; footnote 1",
+      "access_date": "2026-10-07",
+      "original_sha256": "a34d69cd598dfc9ed39cff4f447002a09db3c18a7c34d5e6d12688e7502c0a19",
+      "coverage_limit": "Chart extraction. The crypto exclusion is stated for the 2030 share calculation. The same exhibit is republished in S06. The newer IT-load article is retained as S15 and its prose point is registered as O22. Exhibit 1 was not transcribed, and its relationship to the endnote range remains unresolved.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S06",
+      "title": "McKinsey Scaling bigger, faster, cheaper data centers with smarter designs",
+      "url": "https://www.mckinsey.com/industries/private-capital/our-insights/scaling-bigger-faster-cheaper-data-centers-with-smarter-designs",
+      "source_type": "primary",
+      "locator": "August 2025 edition, opening and Exhibit 2",
+      "access_date": "2026-10-07",
+      "original_sha256": "c706a83983b2d0cc91e6a3b391e7ee5e69d2d287d988b97a9a31d3e59f4827de",
+      "coverage_limit": "Global capacity demand in the continued momentum scenario, not installed capacity or annual consumption. The original ledger labelled this 2024; the held document is August 2025. Its global annual-energy statement is listed as known and unregistered.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S07",
+      "title": "Goldman Sachs AI to drive 165 per cent increase in data center power demand",
+      "url": "https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030",
+      "source_type": "primary",
+      "locator": "4 February 2025, opening forecast paragraph",
+      "access_date": "2026-10-07",
+      "original_sha256": "7a39022d43768009ebc3180da851b94a5bc8c29b8fdf172eb4392d2da8c98dba",
+      "coverage_limit": "Growth relative to 2023, stated as an upper end. The article quantifies power demand in GW. Physical baseline value and full model not reconstructed.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S08",
+      "title": "Goldman Sachs How Rising Hyperscaler Reinvestment Impacts Power Growth",
+      "url": "https://www.goldmansachs.com/insights/goldman-sachs-research/how-rising-hyperscaler-reinvestment-impacts-power-growth-constraints",
+      "source_type": "primary",
+      "locator": "4 March 2026, opening summary",
+      "access_date": "2026-10-07",
+      "original_sha256": "39d2349d8a415534e02041a403f29f73277d4e1863c5f50a7f039d79fe43e350",
+      "coverage_limit": "Corrects the legacy April 2026 date to the date on this primary summary. States the immediately prior outlook value; that outlook's own publication is not retained. Geography not stated on this page. Full underlying report not inspected.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S09",
+      "title": "Goldman Sachs The Outlook for Data Center Power Demand as AI Token Use Grows",
+      "url": "https://www.goldmansachs.com/insights/goldman-sachs-exchanges/the-outlook-for-data-center-power-demand-as-ai-token-use-grows",
+      "source_type": "primary",
+      "locator": "1 September 2026, Brian Singer transcript answer; closing recording-date line",
+      "access_date": "2026-10-07",
+      "original_sha256": "1f2cc6cd023982e8dd7f5940d8efbf7da81546fdff3ea363a2f9439bdb8af0ce",
+      "coverage_limit": "Transcript and summary inspected; audio not checked, and the transcript may differ from it. Recorded 12 August 2026 and published 1 September 2026. The base year is 2025, so this is not a decline from the 2023-base figure.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S10",
+      "title": "BloombergNEF AI and the Power Grid Where the Rubber Meets the Road",
+      "url": "https://about.bnef.com/insights/clean-energy/ai-and-the-power-grid-where-the-rubber-meets-the-road/",
+      "source_type": "primary",
+      "locator": "1 December 2025, opening",
+      "access_date": "2026-10-07",
+      "original_sha256": "580821a038d5071ac9a8adfacea3473c80a5e69cfed4dc631a4f70259a98f43c",
+      "coverage_limit": "Published summary words the value as power demand. The later BNEF article names the December 2025 forecast as comparator explicitly for 2030. Full proprietary model not inspected.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S11",
+      "title": "BloombergNEF Six Things to Know About the New US Data Center Capacity Outlook",
+      "url": "https://about.bnef.com/insights/data-centers/six-things-to-know-about-bnefs-new-us-data-center-capacity-outlook/",
+      "source_type": "primary",
+      "locator": "29 July 2026 article about the 21 July forecast, item 1",
+      "access_date": "2026-10-07",
+      "original_sha256": "e6437ba4ad646d056e33102f779de48f7bddf335846ba03bcf3068739cfb0404",
+      "coverage_limit": "Installed capacity expected online, not annual electricity. Item 1 names the December 2025 comparator for the 2030 figure only. The AI-chip upper scenario is distinct and excluded from the main forecast records.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S12",
+      "title": "S&P Global 2026 US Datacenters and Energy Outlook landing page",
+      "url": "https://pages.marketintelligence.spglobal.com/2026-US-Datacenters-and-Energy-Outlook-report---download-page.html",
+      "source_type": "primary",
+      "locator": "Opening report summary",
+      "access_date": "2026-10-07",
+      "original_sha256": "5a345546669423d182be3c53530a5f1a4d20f0e28f5b9cc40ef37481dd4ee140",
+      "coverage_limit": "Own public report summary verifies the number; full report and crypto/enterprise coverage remain unassessed. The 2026 edition is not a verified 2025 publication date.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S13",
+      "title": "Deloitte As generative AI asks for more power",
+      "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html",
+      "source_type": "primary",
+      "locator": "19 November 2024, opening; endnote 1",
+      "access_date": "2026-10-07",
+      "original_sha256": "85bc69d11bedf2d1513521881ec4d0603cdafb0b74999a4a2dedddc3cbeae6ab",
+      "coverage_limit": "The 2025 predictions edition was published in 2024. The estimate uses mixed external inputs, including Goldman Sachs and EPRI; its efficiency sensitivity is recorded in O17.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S14",
+      "title": "McKinsey Global Institute Colocation data centers: The infrastructure race behind AI",
+      "url": "https://www.mckinsey.com/mgi/our-research/colocation-data-centers-the-infrastructure-race-behind-ai",
+      "source_type": "primary",
+      "locator": "30 June 2026, opening paragraph and endnote 1",
+      "access_date": "2026-10-08",
+      "original_sha256": "2e1331eb57f00ca471f606ebf7355bbb9d8cdc5f1ed0302564c73158905e73c1",
+      "coverage_limit": "The 2030 figure cites McKinsey's December 2025 article on AI workloads and hyperscaler strategies (endnote 1), which is not retained. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S15",
+      "title": "McKinsey Powering AI: How real is the risk of overbuilding? (page title: US AI data center power demand outlook)",
+      "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/powering-ai-how-real-is-the-risk-of-overbuilding",
+      "source_type": "primary",
+      "locator": "31 July 2026, section 'How might power demand play out in the next decade?'",
+      "access_date": "2026-10-08",
+      "original_sha256": "626f36a170fd484a0d4c7a077097fdb0db984244cc3d9747af0e98f78a38a039",
+      "coverage_limit": "States a US model outlook through 2035 with several scenarios; Exhibit 1 was not transcribed. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S16",
+      "title": "McKinsey The transformer supercycle: Why demand is outrunning supply (page title: The transformer market)",
+      "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/the-transformer-supercycle-why-demand-is-outrunning-supply",
+      "source_type": "primary",
+      "locator": "18 September 2026, section on rising power demand, global capacity sentence following the sentence carrying endnote 10",
+      "access_date": "2026-10-08",
+      "original_sha256": "900b11fb93abb8845ff59d473977df14c211efc70c8d41fdb07786ea6ff11ddd",
+      "coverage_limit": "Endnote 10 cites McKinsey Data Center Solution for the power-demand sentence preceding the global capacity statement; the capacity sentence itself has no endnote. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S17",
+      "title": "Gartner Says Data Center Electricity Consumption to Grow 26% in 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-10-gartner-says-data-center-electricity-demand-to-grow-26-percent-in-2026",
+      "source_type": "primary",
+      "locator": "10 June 2026 press release, opening and 'Energy-Constrained Future'",
+      "access_date": "2026-10-08",
+      "original_sha256": "758f92f02c47e7481e3828eb30b7817db6d510740aa327c11dfc476a1384b229",
+      "coverage_limit": "Press release summarising a Gartner forecast; the underlying report is not retained. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S18",
+      "title": "S&P Global Data center power demand to more than double by 2030 - S&P webinar",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/6/data-center-power-demand-to-more-than-double-by-2030-s-p-webinar-102727689",
+      "source_type": "primary",
+      "locator": "15 June 2026 article, paragraph on US capacity",
+      "access_date": "2026-10-08",
+      "original_sha256": "bf664c307d7c0442ff3b57239f70650c6b28dfba443399339d483e89ed9c81a0",
+      "coverage_limit": "News article reporting a webinar with 451 Research analysts; the capacity projection is not attributed within its sentence. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S19",
+      "title": "S&P Global US grid congestion intensifies as data centers compound transmission constraints",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/09/us-grid-congestion-intensifies-as-data-centers-compound-transmission-constraints",
+      "source_type": "primary",
+      "locator": "25 September 2026, PJM paragraph",
+      "access_date": "2026-10-08",
+      "original_sha256": "0f349a058ab099602cf3f6527208c582cd3e4f2633e24cf96095a61422d5c6db",
+      "coverage_limit": "Regional grid analysis; used only for an unregistered PJM value. Retrieved by the author from an ordinary browser session because automated retrieval was refused; quotations matched against that copy.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S20",
+      "title": "Deloitte Insights Nuclear energy's role in powering data center growth",
+      "url": "https://www.deloitte.com/us/en/insights/industry/power-and-utilities/nuclear-energy-powering-data-centers.html",
+      "source_type": "primary",
+      "locator": "9 April 2025, opening section and figure 1",
+      "access_date": "2026-10-08",
+      "original_sha256": "5ae8e42dea6ba1b22f4f2bd323ca2f013e60fcfa749c84e1525c88946f42abb8",
+      "coverage_limit": "A nuclear-energy article stating a Deloitte estimate; figure 1 was not transcribed.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S21",
+      "title": "Deloitte Insights Who will own the power? AI data centers drive power and utilities M&A",
+      "url": "https://www.deloitte.com/us/en/insights/industry/power-and-utilities/mergers-and-acquisitions-power-sector.html",
+      "source_type": "primary",
+      "locator": "24 February 2026, opening paragraph and endnote 2",
+      "access_date": "2026-10-08",
+      "original_sha256": "5c1db3659b48bf9ee2adcfd2f8fcce8fab9cbd05d49ebaacfccdfbc0c4517dff",
+      "coverage_limit": "Restates the April 2025 Deloitte figure (endnote 2 cites S20); not a new estimate.",
+      "independent_review": "pending"
+    },
+    {
+      "id": "S22",
+      "title": "Deloitte Powering Asia Pacific's data centre boom",
+      "url": "https://www.deloitte.com/ap/en/perspectives/powering-asia-pacific-data-centre-boom.html",
+      "source_type": "primary",
+      "locator": "10 February 2026, key findings",
+      "access_date": "2026-10-08",
+      "original_sha256": "12fee87cf7d4d6cabdd275003b556720149bcacab7bc04565ffde48032422f7b",
+      "coverage_limit": "Regional report summary; used only for an unregistered Asia Pacific value.",
+      "independent_review": "pending"
+    }
+  ]
+}
