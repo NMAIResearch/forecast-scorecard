@@ -1,0 +1,30 @@
+{
+  "claim_support_review": "recorded in SUPPORT_REVIEW.json; candidate receipts in CANDIDATE_SUPPORT_REVIEW.json",
+  "entrypoints": [
+    "python3 -B reproduce.py --check",
+    "python3 -B test_reproduce.py -v",
+    "python3 -B reuse_example.py"
+  ],
+  "files": {
+    "CANDIDATE_OBSERVATIONS.json": "7758420252cc7f61eabb9484dc14df7ade1409c23897ad3886c9c246454b4852",
+    "CANDIDATE_SUPPORT_REVIEW.json": "61edfe6f2df85f82b296d629e746e936e015694a84b651e3d55c235f8f20a258",
+    "FORECASTS.csv": "0dee986bf3ab99ddbc82f039d2b1e2f1a464342e8a94f1d0da0f9e41e55ee091",
+    "FORECASTS.md": "e53c3705408b9352db099940618ba3e35cd2bea354d74f93559253c2821c2eef",
+    "LEGACY.csv": "8ccf6804350fa3074bbcd4fb7622867af593214b191fb0583a2e15ce8cca063c",
+    "OBSERVATIONS.json": "731734d5568fa9245b418c1c536eaf29e6c80da44a120bb881f68c27957c1831",
+    "PAPER.md": "4926b6ab391b98fc4783c950e3dfb8ec5a3857f05cd32b367e5113bd00b52ccf",
+    "PAPER.pdf": "33c7c94e1fc4ce5bf5e310c8248674b1ed6fb82cf4b815f8badfae965f3d6d91",
+    "PRIOR_WORK.json": "451bf16a101dea81da4b8f721babd72ada7fb489b76feb50a78f2bfe0a9501e9",
+    "README.md": "738f0c60fbc06665fc227a58acc5df0c6da345cac54be47120a291c861d028fe",
+    "RESULTS.json": "6baf5b8a94aec0c30b3b2745d70d960fc733acdc78dc078ee0660eeaa6ac4160",
+    "SOURCE_CATALOGUE.json": "8f71cf06cbf5dea0cd97d94f0630d3e7985cd6d927ed6950fb33449b991baeaf",
+    "SUPPORT_REVIEW.json": "d0d5e3fb504d78eebe7f59a86f86f163e1abe46c137642b904cc86217a933f7f",
+    "reproduce.py": "cb2c6741669c4f519cec4d5db96b6abccee970e81d22015d318bdc548face221",
+    "reuse_example.py": "72ecd9598eb0fdd45bfb6fb0d10cdfdd3082ccbd840f251c8e62c98f5e899b9b",
+    "test_reproduce.py": "478c5eb5b6d974718f96db7d025cff9aa80f0727e4b3fd2e9e113b030b7a8319"
+  },
+  "independent_acceptance": "pending",
+  "purpose": "Bind this forecast ledger package and its declared reproduction scope.",
+  "source_truth": "not_assessed_by_code",
+  "version": "0.5"
+}

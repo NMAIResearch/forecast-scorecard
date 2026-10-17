@@ -1,0 +1,639 @@
+{
+  "purpose": "Independent claim-support verdicts for the candidate observations in CANDIDATE_OBSERVATIONS.json, each bound to the digest of one candidate row and of the candidate source list.",
+  "digest_method": "SHA-256 of compact sort-keyed UTF-8 JSON, as for SUPPORT_REVIEW.json. row_sha256 covers the candidate row without maker_assessment; candidate_source_list_sha256 covers every source record in CANDIDATE_OBSERVATIONS.json in identifier order, so a change to any candidate source record, including auxiliary evidence, makes every candidate receipt stale. Stale receipts confer nothing.",
+  "admission_rule": "A candidate whose current row and candidate source list carry a supported receipt enters arithmetic, recorded-value spans, the like-for-like comparison and declared comparisons under the rules that apply to a registered observation. A missing or stale receipt, or a verdict short of supported, admits nothing, and the candidate stays listed with its status. A malformed receipt, a receipt naming an unknown candidate or a second current receipt for one candidate fails the reproduction check.",
+  "receipt_fields": {
+    "candidate_id": "The candidate's identifier in CANDIDATE_OBSERVATIONS.json.",
+    "row_sha256": "Digest of the reviewed candidate row without maker_assessment.",
+    "candidate_source_list_sha256": "Digest of the reviewed candidate source list.",
+    "verdict": "supported, partly supported, not supported, contradicted or unassessed.",
+    "reviewer": "The reviewing model, harness, date and run.",
+    "review_record_sha256": "SHA-256 of the reviewer's sealed verdict file.",
+    "locator": "Locator of the decisive evidence.",
+    "components_short_of_supported": "Claim components rated below supported; empty for a supported verdict.",
+    "components_unassessed_as_maker_conduct": "Components describing the makers' own conduct, which the reviewer marked unassessed.",
+    "reason": "The reviewer's reason for the verdict."
+  },
+  "history": "historical_reviews keeps receipts that bound an earlier candidate row or source list; they never count as current. They hold the 0.5 draft receipts of 15 October 2026 (bound to the source list before N24 to N29 were added), 0.4's receipts (bound to 0.4's candidate source list) and 0.4's own earlier ones.",
+  "reviews": [
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C01]; row_sha256=42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "Underlying TrendForce report not retained"
+      ],
+      "reason": "Exact row and N01/N04/N05 records unchanged; no new material bears on this TrendForce quantity. Reuse preserves the unresolved conversion detail, cryptocurrency scope and absent underlying-report limitation."
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C02]; row_sha256=fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N02/N03 records unchanged; new European evidence does not bear on the NEM FY30 value. Preserve unspecified financial-year months, facility/cryptocurrency boundaries and absent full underlying report."
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C03]; row_sha256=ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N02/N03 records unchanged; no new material bears on the NEM FY36 value. Preserve financial-year, method, boundary and absent-underlying-report limitations."
+    },
+    {
+      "candidate_id": "C04",
+      "row_sha256": "e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C04]; row_sha256=e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "N07 retrieval record is not held"
+      ],
+      "reason": "Exact row and N06/N07 records unchanged. New national forecasts and earlier IEA references do not revise the cited 2026 Europe table. Preserve wider-than-EU geography, cryptocurrency uncertainty and N07's unverified retrieval linkage."
+    },
+    {
+      "candidate_id": "C05",
+      "row_sha256": "229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C05]; row_sha256=229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "N07 retrieval record is not held"
+      ],
+      "reason": "Exact row and N06/N07 records unchanged; no new material bears on this China table row. Preserve Hong Kong inclusion, total-facility scope, cryptocurrency uncertainty and N07's unverified retrieval linkage."
+    },
+    {
+      "candidate_id": "C06",
+      "row_sha256": "84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C06]; row_sha256=84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and source records unchanged; no added material changes the cited RTE chapter. Preserve unverified publication date, unresolved N23 attribution discrepancy recorded in NK30, geographic qualification and unspecified facility/cryptocurrency boundaries."
+    },
+    {
+      "candidate_id": "C07",
+      "row_sha256": "32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C07]; row_sha256=32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N09 record unchanged; no new material bears on AF25. Preserve the target-fulfilment scenario and unspecified facility/cryptocurrency boundaries."
+    },
+    {
+      "candidate_id": "C08",
+      "row_sha256": "f181a01eb5ddb908d7d49f329ff83277cc4987eee5751dad7eb0f06db17e4f31",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C08]; row_sha256=f181a01eb5ddb908d7d49f329ff83277cc4987eee5751dad7eb0f06db17e4f31; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N10 record unchanged; no new material bears on DDS 2026. Preserve approximate 15 TWh, Best Estimate and ambiguous facility terminology."
+    },
+    {
+      "candidate_id": "C09",
+      "row_sha256": "99c70b1ecfbabc4ce1fdeae9ed28d86623e0b99a62a7ddb57a83c6038e627d5a",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C09]; row_sha256=99c70b1ecfbabc4ce1fdeae9ed28d86623e0b99a62a7ddb57a83c6038e627d5a; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N11 record unchanged; no new material bears on the workbook cell or method. Preserve exact conversion, FY2030/31, dedicated-building perimeter and modification-versus-publication distinction."
+    },
+    {
+      "candidate_id": "C10",
+      "row_sha256": "ae87c827351eb6dbbd0d6f3ae81e3a8faaa0f088f249a93c7589b7abc1cc6911",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6.1 Sol through Codex (gpt-6.1-sol, reasoning effort xhigh), review a round 4 of 17 October 2026 (packet d82aa46e17e31b2f...; sealed return bc57bad5f0c9b215...), a new finding with no earlier review finding supplied",
+      "review_record_sha256": "bc57bad5f0c9b21535d29deb1576dd9a62d8ecbe2ea516d779a88d577bb89502",
+      "locator": "N13 original.pdf, PDF pages 1-5 and 29-30, especially page 30's Medium category chart; N24 PDF pages 2-4 and 6; N18 PDF page 4; OPERATIONAL_EXTRACT.md inclusion rule.; row_sha256=ae87c827351eb6dbbd0d6f3ae81e3a8faaa0f088f249a93c7589b7abc1cc6911; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "Whether the maker actually read the labels from the stated renders.",
+        "Whether the maker did not rebuild the forecasting model; model_reproduction=not_attempted."
+      ],
+      "reason": "The source supports Statnett attribution, KMA 2025-2030 vintage, September 2025 publication-month wording and separate creation metadata, Norway, annual electricity in TWh, 2030, the Medium case, a point value of 8 and whole-number chart_value basis. Its category boundary remains unspecified; cryptocurrency scope is unstated. The locator, annual labels, segment sum, scenario disclaimer and substantive scenario-method description are supported. Medium is the ordinal middle and prominently presented consumption case; its selection is compatible with the inclusion rule, while the row preserves that it is not Statnett's expectation. N24 and NK29 bear on provenance and comparison limits: NVE uses Statnett connection statistics and states its own later 8 TWh estimate; NK29 reports NVE's earlier increment. This establishes NVE's reliance on Statnett-supplied connection data, not identical forecast inputs or methods, an independent confirmation of C10, or that Statnett used NVE's later method. Neither warrants changing C10's forecaster, vintage, value, scenario or coverage, or importing N24's cryptocurrency discussion into C10. No registration decision is made here."
+    },
+    {
+      "candidate_id": "C11",
+      "row_sha256": "9be98a938c38b717061531dfc643e4ce58caf9fa2b2e5282039cbc14cd3eaf51",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), a new finding",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "N24 original.pdf pp1-7 and reading-order extraction:1-24,80-154,192-224,247-258; N18 original.pdf p4; OPERATIONAL_EXTRACT.md; row_sha256=9be98a938c38b717061531dfc643e4ce58caf9fa2b2e5282039cbc14cd3eaf51; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction='not_attempted' and method_description='model not rebuilt'."
+      ],
+      "reason": "All source-testable components support the Norwegian 2030 point estimate, printed date, text basis, rounding and method. The note explains the earlier NVE projection and Statnett inputs. Unspecified facility and cryptocurrency labels remain appropriate. Selection follows the supplied rule; agreement with C10 is not established as independent confirmation."
+    },
+    {
+      "candidate_id": "C12",
+      "row_sha256": "3b54f8ee208b7f1147cb99cf445f88b653fa2ea24e982f1b6f08344b4d817d34",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C12]; row_sha256=3b54f8ee208b7f1147cb99cf445f88b653fa2ea24e982f1b6f08344b4d817d34; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "Whether any underlying report was retained or assessed"
+      ],
+      "reason": "Exact row and N14 record unchanged. N26's BloombergNEF reference concerns 2021 Germany, not this 2026 EU outlook. Preserve IT-capacity scope, article-title/introduction mismatch and absent underlying-report limitation."
+    },
+    {
+      "candidate_id": "C13",
+      "row_sha256": "fd421ef7e212b527bf9b44315d9efc3f334a725e7947723460110df405a71bc5",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C13]; row_sha256=fd421ef7e212b527bf9b44315d9efc3f334a725e7947723460110df405a71bc5; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N15/N22 records unchanged. N26 is a different forecast; the added search-record lead about the regulator repeats the existing planning values without new retained evidence. Preserve new-only coverage, unverified publication date, separate 2032 increment and N.'s 2037 decision."
+    },
+    {
+      "candidate_id": "C14",
+      "row_sha256": "ca47b4cdbc296ab0982f0251ddb70582b3c13ac2fd65e5721e6732474eaa91dd",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C14]; row_sha256=ca47b4cdbc296ab0982f0251ddb70582b3c13ac2fd65e5721e6732474eaa91dd; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N16 record unchanged; new national studies do not revise this Finnish outlook. Preserve the two-case range, High Growth's planning role and unresolved boundaries."
+    },
+    {
+      "candidate_id": "C15",
+      "row_sha256": "adac1dcb4f5a2a3acdb94391ce30a404a9eb08a2a7d60e00e09c3d1b3d2e7833",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C15]; row_sha256=adac1dcb4f5a2a3acdb94391ce30a404a9eb08a2a7d60e00e09c3d1b3d2e7833; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Exact row and N17 record unchanged; no new material bears on the MM reference value. Preserve 2050, the absence of labelled intermediate numerical values and N.'s nearest-year decision."
+    },
+    {
+      "candidate_id": "C16",
+      "row_sha256": "119083f79679e766eaa16fefbbf0be2d608b0921ff6e80db586cfc0fb29712d0",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), reusing its version 2 receipt verdict after checking that the row and its sources are unchanged and that no new material bears on it",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "previous/CANDIDATE_SUPPORT_REVIEW_V2.json:reviews[C16]; row_sha256=119083f79679e766eaa16fefbbf0be2d608b0921ff6e80db586cfc0fb29712d0; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction='not_attempted' and method_description='model not rebuilt'.",
+        "The maker's claim to have read published chart labels from renders; the earlier review independently verified the readings, not that historical action.",
+        "qualification: both sets of printed values were kept unaltered in NK32, outside the earlier review's supplied scope.",
+        "qualification: BCG cases are not registered; the complete registration record was outside the earlier review.",
+        "state='added' and empty comparison_family/superseded_by as project workflow status."
+      ],
+      "reason": "Exact row and N21 record unchanged. The added unretained grid-access-request lead is not a replacement forecast. Preserve CC/PP labelling, unresolved 2036 chart/appendix discrepancy, approximate baseline and unspecified boundaries."
+    },
+    {
+      "candidate_id": "C17",
+      "row_sha256": "528be37ed940da622490bf57e237b680b30c0c2038c429470b4d3e0b0a0a5b31",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), a new finding",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "N25 original.pdf pp1,25,29,31,36-37,95; Table 4.3; retained retrieval URL; OPERATIONAL_EXTRACT.md; row_sha256=528be37ed940da622490bf57e237b680b30c0c2038c429470b4d3e0b0a0a5b31; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction='not_attempted' and method_description='model not rebuilt'.",
+        "N25 coverage_limit: whether the maker checked subsequent regulatory approval."
+      ],
+      "reason": "All source-testable components support the Polish 2036 SWS point, 17.4 TWh table basis, draft/date qualifications, method and new-only caption-based coverage. The 2030 chart segment is unlabelled, so no numerical 2030 value displaces 2036 under the supplied rule. The 2024 new-only perimeter remains ambiguous. Regulatory approval is not established."
+    },
+    {
+      "candidate_id": "C18",
+      "row_sha256": "0a9e5f36ac771d2c714a0a05cbb1fa12af6eafa2f96bb12dd59e1dd3ed7460dc",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 3 of 17 October 2026 (packet 4e100edab8adaa68...; sealed return c985100e244404f5...), a new finding",
+      "review_record_sha256": "c985100e244404f54f5ae951d72520fd3fc4a996600fd412973d357c861fd2ce",
+      "locator": "N26 original.pdf pp1-2,9,39-41; extraction.txt:365-377,1792-1895; OPERATIONAL_EXTRACT.md; row_sha256=0a9e5f36ac771d2c714a0a05cbb1fa12af6eafa2f96bb12dd59e1dd3ed7460dc; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction='not_attempted' and method_description='model not rebuilt'."
+      ],
+      "reason": "All source-testable components support the expected German 2030 point, 31 TWh text basis, total-facility coverage including smaller IT installations, dates, authorship, law counterfactual and hardware/PUE method. Cryptocurrency scope remains unstated. The commissioned-publication decision permits this attribution; the forecast itself was not reproduced."
+    },
+    {
+      "candidate_id": "C19",
+      "row_sha256": "a3fb71b3cdde759eecfc1a4d3078f5064668f0a5e1cbacf4ab45bebf01262691",
+      "candidate_source_list_sha256": "411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6.1 Sol through Codex (gpt-6.1-sol, reasoning effort xhigh), review a round 4 of 17 October 2026 (packet d82aa46e17e31b2f...; sealed return bc57bad5f0c9b215...), a new finding with no earlier review finding supplied",
+      "review_record_sha256": "bc57bad5f0c9b21535d29deb1576dd9a62d8ecbe2ea516d779a88d577bb89502",
+      "locator": "N27 original.pdf, PDF pages 1-2,68,119-127,159; N28 PDF pages 1,26; N29 retained press release; OPERATIONAL_EXTRACT.md decisions of 17 October 2026.; row_sha256=a3fb71b3cdde759eecfc1a4d3078f5064668f0a5e1cbacf4ab45bebf01262691; candidate_source_list_digest=411b11bb2032b9f881f5524e7bbf062309d8fbfc8c628f487df6eeea18cc730b",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "Whether the maker did not rebuild the forecasting model; model_reproduction=not_attempted."
+      ],
+      "reason": "The full corrected row is supported: commissioning and author attribution, report vintage, July cover/creation date distinguished from the May short report, Switzerland, 2030 annual electricity in TWh, the named Best guess case, point value 3.2 and one-decimal text_value basis. The questionnaire directly requests total IT and infrastructure electricity, supporting total_facility_IT_plus_overhead. The qualification correctly distinguishes excluded SME server rooms and very small centres from larger server rooms within the survey, preserves the high case's possible post-2030 timing and identifies author-set sensitivity assumptions. The survey, national extrapolation, linear continuation, case setting and cross-check method are supported. Cryptocurrency scope remains unstated under the bounded search. Commissioned-publication eligibility and selection of Best guess follow N.'s supplied operational decisions; this review neither creates nor changes them."
+    }
+  ],
+  "historical_reviews": [
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C01; changes/CHANGES.json: rows_unchanged and sources; row_sha256=42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C01 overall finding. The unchanged row relies on N01, N04 and N05. Changes to N06's date/report page and N07's provenance limit do not bear on it. Preserve B4's limitation that the underlying TrendForce report is absent."
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C02; changes/CHANGES.json: rows_unchanged and sources; row_sha256=fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C02 overall finding. The unchanged row relies on N03 and N02, so neither source-list change bears on it. The NEM financial-year scope, approximate auxiliary figure and unspecified facility/cryptocurrency boundaries remain qualified; the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C03; changes/CHANGES.json: rows_unchanged and sources; row_sha256=ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C03 overall finding. The unchanged row relies on N03 and N02, so neither source-list change bears on it. The later NEM financial-year horizon and method limitations remain unchanged; the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C04",
+      "row_sha256": "e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N06-P1 extraction.txt:137-144,207; N06 Table A.4 p110 and Annex B p122; N07 Regional Data!G61; B4 claims I02,I07,I10-I12,I20; row_sha256=e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Newly assessed: both date fields are supported by I13/N06-P1; the qualification now limits the earlier-edition comparison to the retained workbook and discloses its missing retrieval record. Reused B4 I02 (114 TWh, 2030, Base Case), I07 (Europe perimeter), I10-I12 (regional allocation, PUE and unspecified cryptocurrency boundary), I20 (earlier workbook values), and the unchanged supported components of C04 overall. I09 is newly supported after repair. N07's access date/publication linkage remain unverified. The stale SOURCE_INDEX N06 date requires correction but does not contradict the primary page supporting this row."
+    },
+    {
+      "candidate_id": "C05",
+      "row_sha256": "229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N06-P1 extraction.txt:137-144,207; N06 Table A.4 p110 and Annex B p121; N07 Regional Data!G65; B4 claims I03,I08,I10-I12,I20; row_sha256=229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Newly assessed: both date fields are supported by I13/N06-P1; the qualification now limits the earlier-edition comparison to the retained workbook and discloses its missing retrieval record. Reused B4 I03 (277 TWh, 2030, Base Case), I08 (China including Hong Kong), I10-I12 (regional allocation, PUE and unspecified cryptocurrency boundary), I20 (earlier workbook values), and the unchanged supported components of C05 overall. I09 is newly supported after repair. N07's access date/publication linkage remain unverified. The stale SOURCE_INDEX N06 date requires correction but does not contradict the primary page supporting this row."
+    },
+    {
+      "candidate_id": "C06",
+      "row_sha256": "84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "N08 extraction.txt:1397-1560; N08-R1 page-28.png, Figure 2.10; N08 PDF metadata and SOURCE_INDEX URL; B4 claims R01-R16,R18; row_sha256=84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Supported as the qualified row is written: source_publication explicitly remains unverified, while the URL/file-name date and PDF modification date are correctly distinguished. The repaired qualification confines the absence of 2030 levels to prose outside Figure 2.10. Reused B4 R01-R16 and R18 for report identity, dedicated-site boundary, geography qualification, scenario endpoints, methods and bounded absences; R17 was reassessed and the chart inspected. This verdict does not establish a publication date or a more precise forecast-production date."
+    },
+    {
+      "candidate_id": "C07",
+      "row_sha256": "32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795",
+      "candidate_source_list_sha256": "fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex, narrow repair review B5 of 12 October 2026 (packet 92cf6385fe796133...; sealed return 52121dca88676188...), reusing the source-first B4 review of the same day (sealed return 9bbbe175b4dd57f9...) for unchanged rows and components",
+      "review_record_sha256": "8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f",
+      "locator": "b4/B4_FIRST_FINDINGS.json: candidate_findings C07; changes/CHANGES.json: rows_unchanged and sources; row_sha256=32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795; candidate_source_list_digest=fc7e304b502c95465b0c1237ab233bf5122d5a01ac2162ade07587dda0be8f75",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "Reused B4 C07 overall finding. The unchanged row relies on N09, so changes to N06 and N07 do not bear on it. The Danish scope, base-course qualification and unspecified facility boundary remain as reviewed."
+    },
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C01; N01:121-129; N01-I1; N04:27-30 and N04-I3 note; N05:118-128 and N05-I1",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The global 2030 value, GW capacity metric, facility-overhead boundary, source date, equipment and shipment methodology, and bounded qualifications are supported. No numeric TrendForce conversion is supplied. Earlier-release absence is properly confined to N05. Row SHA-256 42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C02; N03:226,229-243; N02 pp.1-2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The joint attribution, Step Change NEM value of 15.5 TWh by FY30, source date and method description agree. The financial-year basis, unknown months, unspecified facility and cryptocurrency boundaries, and distinction from national values are preserved. Row SHA-256 fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "395e79dca227f4b2690164c589d254c0ca74d44b50a0216c8fda2fa98a6365d4",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (codex exec 0.162.1, reasoning effort xhigh, read-only sandbox, no network), packet 62590925026304fb..., run 2026-10-11 23:04 to 23:18 BST, source-first phase B3, first findings sealed by the parent as FIRST_FINDINGS.json SHA-256 e1a718e84689e4c8...",
+      "review_record_sha256": "3df067106e471e3be1cdab02d40f5da9b723b85c72c952e2ef7ee76c5f8f9681",
+      "locator": "claims/CANDIDATE_REVIEW_CLAIMS.json C03; N03:226,229-243; N02 pp.1-2",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [],
+      "reason": "The joint attribution, Step Change NEM value of 33.7 TWh by FY36, source date and method description agree. The financial-year basis, unknown months, unspecified facility and cryptocurrency boundaries, and distinction from national values are preserved. Row SHA-256 ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56.",
+      "superseded": "replaced by receipts built from review record 8ab1496d18086de2389c9eb93ecc201028ed3c3406b88cc4900cbbbec3b55b6f; kept as history, never read as current"
+    },
+    {
+      "candidate_id": "C01",
+      "row_sha256": "42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C01]; unchanged C01 and N01/N04/N05; row_sha256=42808817dd93c04d973196f69391910e4a70777bf30ec0da0b073742606e0eb0; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "Underlying TrendForce report not retained"
+      ],
+      "reason": "Old receipt bindings, row equality and source-record equality verified. Added European sources do not alter this TrendForce quantity, conversion qualification or boundary. Preserve the absent underlying-report limitation."
+    },
+    {
+      "candidate_id": "C02",
+      "row_sha256": "fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C02]; unchanged C02 and N02/N03; row_sha256=fb59e7bca0f7ae1ad9a632a3d3342c23f7e35ece92720e2b8d4808f0fefd4ee4; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Bindings and unchanged evidence records verified. Added sources do not bear on this NEM Step Change value. Preserve the FY30 label, unstated financial-year months and facility/cryptocurrency boundaries. The inherited receipt also notes that the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C03",
+      "row_sha256": "ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C03]; unchanged C03 and N02/N03; row_sha256=ef985aa95b62be5c20723424018bcbb44253d1081999036ba643846a5eae9c56; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Bindings and unchanged evidence records verified. Added sources do not bear on this NEM Step Change value. Preserve the FY36 label and the prior method and boundary limitations. The inherited receipt also notes that the full underlying report is absent."
+    },
+    {
+      "candidate_id": "C04",
+      "row_sha256": "e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C04]; unchanged C04 and N06/N07; row_sha256=e9ae8556812da264782a191f21d61cc2d4fbbfd9f8334438d7ecf119d1c550ff; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "N07 retrieval record is not held"
+      ],
+      "reason": "Bindings and unchanged source records verified. New national forecasts and earlier-edition IEA references do not change the cited 2026 Europe table row. Preserve N07's unverified access/publication linkage and the wider-than-EU geography."
+    },
+    {
+      "candidate_id": "C05",
+      "row_sha256": "229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C05]; unchanged C05 and N06/N07; row_sha256=229dc9c24f3340af55eef1dd3355222746a7fca4f4a0293f98517c2aa1cc3776; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "N07 retrieval record is not held"
+      ],
+      "reason": "Bindings and unchanged source records verified. Added evidence does not bear on this 2026 China table row. Preserve Hong Kong inclusion, total-facility scope and N07's unverified access/publication linkage."
+    },
+    {
+      "candidate_id": "C06",
+      "row_sha256": "84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), a new finding in this round",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "N08 original.pdf, Figure 2.10 p.28; extraction:86,463-476,565-566,1397-1560; N19:2579-2583; N23:205-207; row_sha256=84eda9f2cad0a589db0dc3bfec0fd3210ddce803e3d2270bba215dda781086c9; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "N19/N23 bear on this row, so simple receipt reuse is inappropriate. Fresh inspection confirms the dedicated-site 2030 chart range 10-15 TWh, scenario assignments, method and scope qualifications. N23 instead attributes 15-20/23-28 TWh to the 2025 edition; that unresolved attribution is retained in NK30 and does not replace the explicitly cited chapter. The row accurately labels publication unverified."
+    },
+    {
+      "candidate_id": "C07",
+      "row_sha256": "32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing its 0.4 receipt verdict after checking that the row and its sources are unchanged",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "release-0.4/CANDIDATE_SUPPORT_REVIEW.json, reviews[C07]; unchanged C07 and N09; row_sha256=32d78ae3a9f66a0b728bfd20886b0c2859ddac37c79cc9158a7522f9993c7795; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "Bindings and source-record equality verified. No added or changed source bears on the Danish AF25 value or method; preserve its target-fulfilment and unspecified-boundary qualifications."
+    },
+    {
+      "candidate_id": "C08",
+      "row_sha256": "f181a01eb5ddb908d7d49f329ff83277cc4987eee5751dad7eb0f06db17e4f31",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing review a's round 1 finding (sealed return d48bada74f47c254...) for a row unchanged since",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "review-a/FIRST_FINDINGS.json, candidate_findings C08; N10:257-285,651-694,1464-1509; row_sha256=f181a01eb5ddb908d7d49f329ff83277cc4987eee5751dad7eb0f06db17e4f31; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The sealed supported finding is reused after exact row and N10 equality checks and reference-quotation rematching. Preserve approximate 15 TWh, the Best Estimate case and ambiguous facility terminology."
+    },
+    {
+      "candidate_id": "C09",
+      "row_sha256": "99c70b1ecfbabc4ce1fdeae9ed28d86623e0b99a62a7ddb57a83c6038e627d5a",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing review a's round 1 finding (sealed return d48bada74f47c254...) for a row unchanged since",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "review-a/FIRST_FINDINGS.json, candidate_findings C09; N11 Cover/Versions/ED1/ED2; N11-A explainer; row_sha256=99c70b1ecfbabc4ce1fdeae9ed28d86623e0b99a62a7ddb57a83c6038e627d5a; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The sealed supported finding is reused after exact row/source checks and quotation rematching. No change bears on it. Preserve 12.579 TWh, FY2030/31, dedicated buildings and the distinction between modification and initial upload dates."
+    },
+    {
+      "candidate_id": "C10",
+      "row_sha256": "ae87c827351eb6dbbd0d6f3ae81e3a8faaa0f088f249a93c7589b7abc1cc6911",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing review a's round 1 finding (sealed return d48bada74f47c254...) for a row unchanged since",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "review-a/FIRST_FINDINGS.json, candidate_findings C10; N13 p.30 and retained chart renders; row_sha256=ae87c827351eb6dbbd0d6f3ae81e3a8faaa0f088f249a93c7589b7abc1cc6911; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The sealed supported finding is reused after exact row/source checks. Preserve the whole-number 8 TWh label and the source's statement that Medium is not its expectation."
+    },
+    {
+      "candidate_id": "C12",
+      "row_sha256": "3b54f8ee208b7f1147cb99cf445f88b653fa2ea24e982f1b6f08344b4d817d34",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), a new finding in this round",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "N14 original.html:53-54 and article body; extraction:185-206; row_sha256=3b54f8ee208b7f1147cb99cf445f88b653fa2ea24e982f1b6f08344b4d817d34; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models",
+        "Whether any underlying report was retained or assessed"
+      ],
+      "reason": "The repaired row accurately represents the EU 2030 IT-capacity point 16.3 GW, unnamed headline case and pipeline basis. The article's US/EMEA mismatch and later modification are disclosed. Subscriber-report classification is no longer asserted."
+    },
+    {
+      "candidate_id": "C13",
+      "row_sha256": "fd421ef7e212b527bf9b44315d9efc3f334a725e7947723460110df405a71bc5",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), a new finding in this round",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "N15:596-606,757-765,2546-2636; pdfinfo; retrieval URL; N22:57,1604-1614; OPERATIONAL_EXTRACT.md; row_sha256=fd421ef7e212b527bf9b44315d9efc3f334a725e7947723460110df405a71bc5; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The qualified row supports B2037, 97.3 TWh, new-data-centre coverage, capacity weighting and the separate 2032 increment. March 2026 is accurately labelled a URL/creation proxy with publication unverified. This verdict does not establish a publication date or decide registration."
+    },
+    {
+      "candidate_id": "C14",
+      "row_sha256": "ca47b4cdbc296ab0982f0251ddb70582b3c13ac2fd65e5721e6732474eaa91dd",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), a new finding in this round",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "N16 original.pdf pp.3,6; extraction:52-63,158-191; independent page-6 render; row_sha256=ca47b4cdbc296ab0982f0251ddb70582b3c13ac2fd65e5721e6732474eaa91dd; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The repaired locator supports the 9-18 TWh Finnish 2030 scenario range and qualifications. High Growth's grid-planning role is preserved. Whether to register that case alone remains N.'s decision."
+    },
+    {
+      "candidate_id": "C15",
+      "row_sha256": "adac1dcb4f5a2a3acdb94391ce30a404a9eb08a2a7d60e00e09c3d1b3d2e7833",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), review a round 2 of 15 October 2026 (packet c04613cdecbf4fb0...; sealed return 39cbd72859d99326...), reusing review a's round 1 finding (sealed return d48bada74f47c254...) for a row unchanged since",
+      "review_record_sha256": "39cbd72859d993266a236c21273a7266d3c45420bb0b16c860ab159dc57c633d",
+      "locator": "review-a/FIRST_FINDINGS.json, candidate_findings C15; N17:815-820,1849-1866 and Figure 5; row_sha256=adac1dcb4f5a2a3acdb94391ce30a404a9eb08a2a7d60e00e09c3d1b3d2e7833; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction and the maker's statements about reading outputs and not rebuilding models"
+      ],
+      "reason": "The sealed supported finding is reused after exact row/source checks. Preserve MM reference-case 27.1 TWh in 2050, the unlabelled intermediate chart years and the supplied nearest-year registration decision."
+    },
+    {
+      "candidate_id": "C16",
+      "row_sha256": "119083f79679e766eaa16fefbbf0be2d608b0921ff6e80db586cfc0fb29712d0",
+      "candidate_source_list_sha256": "f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "verdict": "supported",
+      "reviewer": "OpenAI GPT-6 Astra through Codex (gpt-6-astra, reasoning effort max), isolated source-first review of C16 of 15 October 2026 (packet 1800e84993f86e50...; sealed return 7369bbf5fbc73d55...), a new finding with no earlier review finding supplied",
+      "review_record_sha256": "7369bbf5fbc73d5567b3f5b2de57179ec3cc616633d3188c489a5238a4a621a4",
+      "locator": "sources/n21-elia-adeqflex-2026-2036/elia_adequacy_flexibility_study_2026_2036_report.pdf: cover, printed pp.12,128-130,486-487; sources/n21-elia-adeqflex-2026-2036/extraction.txt:1500,1706-1710,6163-6171,6316-6341,24884-24899; EL01-EL14 as listed; row_sha256=119083f79679e766eaa16fefbbf0be2d608b0921ff6e80db586cfc0fb29712d0; candidate_source_list_digest=f4c0ad79fe044b5abd223be855584898c6cf9483c2c03446803625ed709bc118",
+      "components_short_of_supported": [],
+      "components_unassessed_as_maker_conduct": [
+        "model_reproduction='not_attempted' and method_description='model not rebuilt'.",
+        "The maker's claim to have read published chart labels from renders; this review independently verified the readings, not that historical action.",
+        "qualification: both sets of printed values were kept unaltered in NK32, which is not supplied.",
+        "qualification: BCG cases are not registered; the complete registration record is outside this review.",
+        "state='added' and empty comparison_family/superseded_by as project workflow status."
+      ],
+      "reason": "All source-testable row components are supported: Elia/Belgium TSO, study vintage and qualified cover date, Belgium, 2030, annual electricity in TWh, named CC scenario and its former Central/reference designation, point shape with low=high=point=5.8, printed chart-value basis, unresolved facility coverage and cryptocurrency scope, and the PDF/figure locator. This is total annual consumption, so base_year=null is appropriate. The row preserves the approximate 2024 level, printed-value discrepancy, one-decimal precision and distinction from BCG comparisons. The source describes scenario assumptions informed by Elia's load-management exercise. Support excludes the maker-conduct statements listed below and does not itself register the candidate."
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "purpose": "Earlier work this version extends, and a comparison of the ledger with the catalogue of the IEA 4E review (P01). Values attributed to P01 are transcribed as P01 records them, with ranges written 'x to y' and thousands separated by commas; they are not re-verified against the publications P01 reviewed.",
+  "version": "0.4",
+  "sources": [
+    {
+      "id": "P01",
+      "citation": "Kamiya, G. and Coroamă, V.C. (2025). Data Centre Energy Use: Critical Review of Models and Results. EDNA, IEA 4E TCP, March 2025.",
+      "url": "https://www.iea-4e.org/wp-content/uploads/2025/05/Data-Centre-Energy-Use-Critical-Review-of-Models-and-Results.pdf",
+      "publication_date": "2025-03",
+      "access_date": "2026-10-09",
+      "original_sha256": "0f80fd2fd0ec201a2e681e4c10e7fe41bc5f44d5c2b1bc1af420d010f483ecbe",
+      "url_basis": "Retrieved on 9 October 2026 from this URL; the bytes are identical to the copy retained in the prior-work check."
+    },
+    {
+      "id": "P02",
+      "citation": "Mytton, D. and Ashtine, M. (2022). Sources of data center energy estimates: A comprehensive review. Joule 6(9), 2032 to 2056.",
+      "url": "https://doi.org/10.1016/j.joule.2022.07.011",
+      "publication_date": "2022",
+      "access_date": "2026-10-09",
+      "original_sha256": "4e54b7c8e154ed24dea133ce3b61ad578af9e258918e03e9cf32041d8f55831e",
+      "url_basis": "DOI as cited in P01's reference list; the retained copy is the authors' accepted manuscript, which does not print the journal citation."
+    },
+    {
+      "id": "P03",
+      "citation": "Koomey, J., Schmidt, Z. and Das, T. (2025). Electricity Demand Growth and Data Centers: A Guide for the Perplexed. Bipartisan Policy Center, 5 February 2025.",
+      "url": "https://bipartisanpolicy.org/report/electricity-demand-growth-and-data-centers/",
+      "publication_date": "2025-02-05",
+      "access_date": "2026-10-09",
+      "original_sha256": "570561c127e850ce0fd1e352bdec93b3abbc8f3acec24ce2d4b62c04b0cfe37f",
+      "url_basis": "Canonical URL recorded in the retained page."
+    },
+    {
+      "id": "P04",
+      "citation": "London Economics International (2025). Uncertainty and upward bias are inherent in data center electricity demand projections. Prepared for the Southern Environmental Law Center, 7 July 2025.",
+      "url": "https://www.selc.org/wp-content/uploads/2025/07/LEI-Data-Center-Final-Report-07072025-2.pdf",
+      "publication_date": "2025-07-07",
+      "access_date": "2026-10-09",
+      "original_sha256": "b977debb551203df9a05926925a6c1d732fa6483b0380d076eb8250d9d6bf7ec",
+      "url_basis": "Retrieved on 9 October 2026 from this URL; the bytes are identical to the copy retained in the prior-work check."
+    },
+    {
+      "id": "P05",
+      "citation": "Goldsmith, I. and Byrum, Z. (2025). Powering the US Data Center Boom: Why Forecasting Can Be So Tricky. World Resources Institute, 17 September 2025.",
+      "url": "https://www.wri.org/insights/us-data-centers-electricity-demand",
+      "publication_date": "2025-09-17",
+      "access_date": "2026-10-09",
+      "original_sha256": "9bae1207fd555dce75964de7d869c20187cd33b589c68ea69006ad5c8b7df6a0",
+      "url_basis": "Canonical URL recorded in the retained page; the page's HTML title reads 'Powering the US Data Center Boom: The Challenge of Forecasting Electricity Needs'."
+    },
+    {
+      "id": "P06",
+      "citation": "ENTSO-E (2026). Data centres and the power system: expected trends, challenges and opportunities. European Network of Transmission System Operators for Electricity, May 2026.",
+      "url": "https://eepublicdownloads.blob.core.windows.net/public-cdn-container/clean-documents/Reports/2026/FINAL_ENTSO-E_Data_Centres_260430.pdf",
+      "publication_date": "2026-05",
+      "access_date": "2026-10-11",
+      "original_sha256": "490ea5a120846a89d4f663401301375fb76e4a9ceef8f892fb743724620989ff",
+      "url_basis": "Retrieved on 11 October 2026 from this URL; the cover prints May 2026 and the PDF's metadata creation date is 30 April 2026."
+    }
+  ],
+  "four_e_parameters": [
+    {
+      "parameter": "Affiliation",
+      "four_e_values": "academia, government, industry, non-governmental organisation, mixed",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "No field. The publisher is named in forecaster; its affiliation type is not recorded.",
+      "relation": "not recorded"
+    },
+    {
+      "parameter": "Publication type",
+      "four_e_values": "peer-reviewed, preprint, report",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "No field. The catalogue's source_type records whether a source is a primary document or table, not its publication type.",
+      "relation": "not recorded"
+    },
+    {
+      "parameter": "Geographic scope",
+      "four_e_values": "global, multi-country, country",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "geography names the area covered: Global and US in the ledger; the candidates add the Australian National Electricity Market, Europe and China as the IEA defines them, France, Denmark, Italy, Great Britain, Norway, Germany, Finland, Sweden, Belgium, Poland, Switzerland and the European Union.",
+      "relation": "recorded as a named area"
+    },
+    {
+      "parameter": "Time horizon",
+      "four_e_values": "historical, projection",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "horizon records the target year; a historical estimate carries the metric historical_model_estimate and stays outside spans; forecast_vintage, source_publication and base_year record dates separately.",
+      "relation": "recorded at a finer grain"
+    },
+    {
+      "parameter": "Methodological and modelling approach",
+      "four_e_values": "bottom-up, aggregated totals, temporal proxy extrapolation, hybrid, other",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "method_description records the method only in wording located in the source and assigns no class; model_reproduction records that no provider model was rebuilt.",
+      "relation": "described, not classified"
+    },
+    {
+      "parameter": "Analytical scope",
+      "four_e_values": "data centre types (enterprise, cloud, hyperscale) and specific technologies or topics (AI)",
+      "four_e_locator": "P01 section 2.3, p. 6",
+      "ledger": "coverage records the facility boundary and crypto_scope the cryptocurrency boundary; data-centre types appear in qualifications where the source states them.",
+      "relation": "recorded as boundaries"
+    },
+    {
+      "parameter": "Recorded by P01 outside the six parameters",
+      "four_e_values": "starting, ending and base year of each assessment; one row per named scenario; cryptocurrency removed where an assessment included it; emissions-only results converted to electricity",
+      "four_e_locator": "P01 section 2.4, p. 10",
+      "ledger": "base_year and scenario are recorded as stated; crypto_scope records the stated or inferred boundary and nothing is removed; no conversion between quantities is made.",
+      "relation": "recorded without harmonisation"
+    },
+    {
+      "parameter": "Ledger fields with no P01 catalogue parameter",
+      "four_e_values": "P01's metric is annual energy consumption in TWh",
+      "four_e_locator": "P01 section 1.2, p. 1",
+      "ledger": "unit and metric distinguish energy, capacity, capacity demand and growth; value_basis records table, text or chart values; shape records points, ranges and bounds; superseded_by and comparison_family record same-publisher vintages; SUPPORT_REVIEW.json binds an independent receipt to each row.",
+      "relation": "no P01 counterpart"
+    }
+  ],
+  "four_e_comparison": [
+    {
+      "publisher": "IEA",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O01",
+        "O02",
+        "O03",
+        "O18"
+      ],
+      "four_e_entries": "IEA (2014) to IEA (2025); the latest are Electricity 2024, World Energy Outlook 2024 and Electricity 2025",
+      "four_e_record": "Global, IEA (2024b) with Spencer and Singh (2024): 240 to 340 TWh in 2022 and a 2030 projection of 515 TWh (range 405 to 685 TWh)",
+      "four_e_scenario": "range given; scenario names not given in the table",
+      "four_e_crypto": "excluding cryptocurrency, as P01 records it",
+      "four_e_quality": "not assessed (lack of methodological details)",
+      "four_e_locator": "P01 Table 2.1, p. 5; Table 3.1, p. 16; references, p. 55",
+      "ledger_shown": [
+        "O01",
+        "O03"
+      ],
+      "checks": [],
+      "difference": "Different editions. P01's latest global IEA projection comes from the World Energy Outlook 2024; the ledger registers the tabulated Base Case values of the 2025 Energy and AI annex and the 2026 report, which P01 does not list. P01 records its IEA values as excluding cryptocurrency; the ledger records cryptocurrency coverage for its IEA rows as not stated. Not a revision comparison."
+    },
+    {
+      "publisher": "LBNL",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [
+        "O04",
+        "O05",
+        "O06"
+      ],
+      "publisher_only": [],
+      "four_e_entries": "Shehabi et al. (2016, 2018, 2024); the latest is the 2024 United States Data Center Energy Usage Report",
+      "four_e_record": "United States, Shehabi et al. (2024): 178 TWh in 2023 and 325 to 580 TWh in 2028",
+      "four_e_scenario": "range given; scenario names not given in the table",
+      "four_e_crypto": "excluding cryptocurrency, as P01 states for this report",
+      "four_e_quality": "high",
+      "four_e_locator": "P01 Table 2.1, p. 5; section 3.2.1, p. 20; Table 3.2, p. 23; references, p. 60",
+      "ledger_shown": [
+        "O04",
+        "O05",
+        "O06"
+      ],
+      "checks": [],
+      "difference": "Earlier edition of the same report series: P01 covers the 2024 report and the ledger registers the 2025 Update. Both record cryptocurrency as excluded. The values come from different editions and are not compared as a revision."
+    },
+    {
+      "publisher": "EPRI",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [
+        "O07"
+      ],
+      "publisher_only": [],
+      "four_e_entries": "EPRI (2024), Powering Intelligence",
+      "four_e_record": "United States: a 2030 projection of 200 to 405 TWh",
+      "four_e_scenario": "range from assumed growth rates; scenario names not given in the table",
+      "four_e_crypto": "not stated for this entry; P01's US figure note says its US values exclude cryptocurrencies",
+      "four_e_quality": "low-medium",
+      "four_e_locator": "P01 Table 2.1, p. 5; Figure 3.3 note, p. 21; Table 3.2, p. 22; references, p. 52",
+      "ledger_shown": [
+        "O07"
+      ],
+      "checks": [],
+      "difference": "Earlier edition of the same series: P01 covers the 2024 report and the ledger registers the 2026 brief. The ledger records the 2026 range as including cryptocurrency, while P01's US figure note says its US values exclude cryptocurrencies. Not compared as a revision."
+    },
+    {
+      "publisher": "McKinsey",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [
+        "O08"
+      ],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O09",
+        "O21",
+        "O22",
+        "O23"
+      ],
+      "four_e_entries": "McKinsey (2023), (2024a) and (2024b); McKinsey (2024a) carries the URL of ledger source S05",
+      "four_e_record": "United States, McKinsey (2024a): 147 TWh in 2023, 178 TWh in 2024 (25 GW capacity) and a 2030 projection of 606 TWh (80 GW)",
+      "four_e_scenario": "not given in the table",
+      "four_e_crypto": "not stated for this entry; P01's US figure note says its US values exclude cryptocurrencies",
+      "four_e_quality": "not assessed (no methodology disclosed)",
+      "four_e_locator": "P01 Table 2.1, p. 5; section 3.2.1, p. 20; Table 3.2, p. 23; references, p. 58",
+      "ledger_shown": [
+        "O08"
+      ],
+      "checks": [
+        {
+          "observation": "O08",
+          "field": "point",
+          "relation": "equal",
+          "four_e_value": 606
+        }
+      ],
+      "difference": "Same publication and the same 2030 value. P01 also records a 2030 capacity figure and 2023 and 2024 values, which the ledger does not register. The ledger records the medium scenario and a cryptocurrency exclusion inferred from the publication's footnote; P01's table states neither. McKinsey's four other registered figures come from later publications."
+    },
+    {
+      "publisher": "Goldman Sachs",
+      "four_e_base_year": "not given as such; P01's method summary says the global projection builds on the high range of an IEA estimate for 2022",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O10",
+        "O11",
+        "O12",
+        "O19",
+        "O20"
+      ],
+      "four_e_entries": "Goldman Sachs (2024), AI, data centers and the coming US power demand surge",
+      "four_e_record": "Global: a 2030 projection of 740 to 1,400 TWh; United States: 397 TWh in 2030",
+      "four_e_scenario": "Base Case, Bear and Bull (Figure 3.1 legend)",
+      "four_e_crypto": "not stated for these entries",
+      "four_e_quality": "global: medium; United States: not assessed",
+      "four_e_locator": "P01 Table 2.1, p. 5; Figure 3.1, p. 13; Table 3.1, p. 15; Table 3.2, p. 22; references, p. 53",
+      "ledger_shown": [
+        "O10",
+        "O12"
+      ],
+      "checks": [],
+      "difference": "Different publications and quantities. P01 records annual energy in TWh from Goldman Sachs's 2024 report; the ledger registers later statements of power-demand growth relative to a base year, which it does not convert to energy."
+    },
+    {
+      "publisher": "BloombergNEF",
+      "four_e_base_year": "not applicable (a 2021 estimate)",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O13",
+        "O14",
+        "O15"
+      ],
+      "four_e_entries": "BloombergNEF, Statkraft and Eaton (2021), Data Centers and Decarbonization",
+      "four_e_record": "Germany, Ireland, the Netherlands, Norway and the United Kingdom: 26 TWh in 2021 for colocation and hyperscale data centres",
+      "four_e_scenario": "a 2021 estimate; no scenario given",
+      "four_e_crypto": "not stated for this entry",
+      "four_e_quality": "medium-high",
+      "four_e_locator": "P01 Table 2.1, p. 5; Table 3.3, p. 25; references, p. 49",
+      "ledger_shown": [
+        "O14",
+        "O15"
+      ],
+      "checks": [],
+      "difference": "No overlap of edition, geography or quantity: P01 covers a 2021 European energy estimate, and the ledger registers BloombergNEF's 2025 and 2026 US installed-capacity forecasts."
+    },
+    {
+      "publisher": "S&P Global with 451 Research",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O16",
+        "O25"
+      ],
+      "four_e_entries": "S&P Global (2024), S&P Global Commodity Insights (2024) and S&P Global Market Intelligence (2024a), the 2024 US Datacenters and Energy Report",
+      "four_e_record": "United States: Commodity Insights, 355 to 385 TWh in 2030; Market Intelligence, over 280 TWh in 2024 and 530 TWh in 2028; S&P Global, 340 to 420 TWh in 2030",
+      "four_e_scenario": "not given in the table",
+      "four_e_crypto": "not stated for these entries; P01's US figure note says its US values exclude cryptocurrencies",
+      "four_e_quality": "Commodity Insights: medium; the other two: not assessed",
+      "four_e_locator": "P01 Table 2.1, p. 5; Table 3.2, p. 24; references, p. 61",
+      "ledger_shown": [
+        "O16",
+        "O25"
+      ],
+      "checks": [],
+      "difference": "Earlier publications only. P01 covers S&P Global's 2024 reports; the ledger registers the 2026 outlook and a June 2026 webinar report. The 2024 report and the 2026 outlook have similar titles, but the retained records do not establish that they form one series, so they are not treated as editions of one series."
+    },
+    {
+      "publisher": "Deloitte",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O17",
+        "O26"
+      ],
+      "four_e_entries": "Deloitte Global (2024), Powering AI",
+      "four_e_record": "Global: 380 TWh in 2023 and a 2030 range of 700 to 970 TWh",
+      "four_e_scenario": "Baseline and High adoption (Figure 3.1 legend)",
+      "four_e_crypto": "not stated for this entry",
+      "four_e_quality": "medium-high; P01 names it as the exception among consultancy and investment-bank studies",
+      "four_e_locator": "P01 Table 2.1, p. 5; Figure 3.1, p. 13; Table 3.1, p. 14; section 5.2.2, p. 39; references, p. 51",
+      "ledger_shown": [
+        "O17"
+      ],
+      "checks": [
+        {
+          "observation": "O17",
+          "field": "point",
+          "relation": "outside",
+          "four_e_low": 700,
+          "four_e_high": 970
+        }
+      ],
+      "difference": "Different Deloitte publications of late 2024. P01 records the 2030 range of Deloitte Global's Powering AI; the ledger registers the 2030 figure in Deloitte's 2025 predictions article, which lies outside that range. The retained records do not establish whether the two share a model."
+    },
+    {
+      "publisher": "Gartner",
+      "four_e_base_year": "not given in P01's tables",
+      "same_publication": [],
+      "earlier_edition": [],
+      "publisher_only": [
+        "O24",
+        "O27"
+      ],
+      "four_e_entries": "Gartner (2024a) and (2024b), among AI energy studies",
+      "four_e_record": "AI energy use: 74 TWh in 2022, 195 TWh in 2023 and 500 TWh in 2027",
+      "four_e_scenario": "not given",
+      "four_e_crypto": "not stated for this entry",
+      "four_e_quality": "not assessed (lack of methodological details)",
+      "four_e_locator": "P01 Table 2.1, p. 5; Table 3.4, p. 31; references, p. 52",
+      "ledger_shown": [
+        "O24",
+        "O27"
+      ],
+      "checks": [],
+      "difference": "Different publications and scope: P01's Gartner entries estimate AI energy use only, and the ledger registers Gartner's 2026 total data-centre figures."
+    }
+  ],
+  "four_e_quality_filter": {
+    "year": 2023,
+    "geography": "Global",
+    "unit": "TWh",
+    "low": {
+      "rating": "low",
+      "publications": 7,
+      "scenarios_and_cases": 17,
+      "minimum": 480,
+      "maximum": 2000
+    },
+    "higher": {
+      "rating": "low-medium or higher",
+      "publications": 22,
+      "scenarios_and_cases": 43,
+      "minimum": 190,
+      "maximum": 560
+    },
+    "executive_summary_scenarios_and_cases_higher": 42,
+    "figure_es1_estimates_by_higher_class": [
+      12,
+      12,
+      7,
+      12
+    ],
+    "locator": "P01 executive summary, pp. iv and v; Figure ES.1, p. v; section 6.1, p. 44"
+  }
+}
