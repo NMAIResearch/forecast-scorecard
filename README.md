@@ -1,6 +1,6 @@
 # AI Energy-Demand Forecast Scorecard
 
-Data, code and paper for *The AI Energy-Demand Forecast Scorecard: what data-centre electricity forecasts measure and what can be checked*, by NM AI Research (ORCID
+Data, code and paper for *The AI Energy-Demand Forecast Scorecard: what data-centre electricity forecasts measure and what can be checked*, by NMAI Research (ORCID
 [0009-0003-4213-7769](https://orcid.org/0009-0003-4213-7769)). Licence: CC BY 4.0.
 
 This work was produced through an AI-assisted workflow directed and reviewed by the author.
